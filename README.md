@@ -550,3 +550,97 @@ During the sprint retrospective, the team evaluated both the production process 
 ⸻
 
 This sprint has been highly productive in shaping the core system architecture and successfully creating the prototype concept. The team has demonstrated a systematic approach to identifying and solving structural issues before moving on to advanced stages.
+
+---
+
+Sprint 2 Report
+Project Name: InsightAI – An Artificial Intelligence System Providing Access to Micro-Courses from Current Events
+Sprint Duration: [July 7, 2025 – July 20, 2025]
+Team Members: Furkan ÖZTÜRK, Enes KIRAÇ, Fatih Emre ERTEKİN, Kübra ÖZCAN, Emine ÇAKAR
+
+1. Sprint Planning and Configuration
+1.1. User Story and Backlog Management
+User stories were defined and integrated into the Product Backlog prior to Sprint 2. Each story could be accessed via corresponding backlog items and included detailed sub-tasks focused on content delivery, enhancement of news analysis algorithms, and audio-based course generation.
+
+1.2. Sprint Capacity and Point Allocation
+The total target for Sprint 2 was set at 100 points.
+The entire project backlog consists of 300 points, distributed equally across three sprints. Sprint 2 builds upon the foundations established in Sprint 1 by introducing new modules.
+All tasks were structured to stay within the point limit and organized modularly to maintain continuity across components.
+
+1.3. Task Distribution and Backlog Structure
+In this sprint, the backlog was reorganized to focus on content enrichment, performance improvement, and expansion of data sources. The main task categories included:
+
+Development of an “impact score” system to prioritize current events in the AI model
+
+Implementation of integration modules to retrieve news from multiple sources
+
+Enhancing the text-to-speech (TTS) engine to produce more natural speech
+
+Creating a customizable, segment-based structure for newsletter content
+
+Designing the first visual prototype for the mobile interface
+
+Developing templates for visual learning cards (infographics)
+
+Color-coded task categories on the Miro Board:
+
+Pink: Software development (API, model, system architecture)
+
+Purple: Audio narration, TTS, audio pipeline tasks
+
+Light Green: Visual summaries and media production
+
+Dark Green: General-purpose or uncategorized technical tasks
+
+Blue: UI/UX and design-related tasks
+
+All tasks were assigned based on sprint capacity and team competency. The final day of the sprint was intentionally left open for stabilization and team recovery.
+
+2. Daily Scrum Process
+As in Sprint 1, Daily Scrum meetings were held regularly via Google Meet. Each team member reported their progress, blockers, and plans. Immediate feedback and problem resolution were achieved during these meetings.
+Additional communication occurred over WhatsApp, and all logs were archived via a shared Google Drive link.
+
+Meeting Records:
+Sprint 2 – Daily Scrum Logs (The URL will be added in Sprint 3.)
+
+3. Product Status and System Progress
+By the end of the sprint, several key components of the second version of the system were successfully completed. Substantial progress was achieved in both the system infrastructure and the user-facing components.
+
+Key product developments:
+
+The AI module now incorporates new parameters such as “public interest potential” to generate more relevant course content
+
+Micro courses are now categorized by topic and tailored to individual users
+
+The newsletter template was updated to support segment-based personalization, and a content suggestion engine was integrated
+
+The speech synthesis engine was replaced with a model capable of producing more human-like voiceovers
+
+The first prototype of the visual knowledge cards was developed
+
+4. Sprint Review
+During the Sprint Review meeting, all completed tasks were presented and evaluated by the team. The newly developed modules were tested by all members, and overall functional success was confirmed.
+However, performance issues were noted in AI analysis of specific news categories, highlighting the need for broader source integration.
+In addition, feedback indicated that the initial version of the user interface should be simplified in areas where complexity hindered usability.
+
+Sprint Review Participants:
+Furkan ÖZTÜRK, Enes KIRAÇ, Fatih Emre ERTEKİN, Kübra ÖZCAN, Emine ÇAKAR
+
+5. Sprint Retrospective
+The team agreed to maintain the two-group structure established in Sprint 1. Responsibilities were reaffirmed as follows:
+
+Group 1 (Furkan, Fatih): Planning new content modules and expanding the micro course framework
+
+Group 2 (Enes, Kübra, Emine): Testing existing modules, synchronizing audio content, and finalizing user interfaces
+
+It was decided that Group 2 would increase the frequency of internal meetings and adopt a tighter feedback loop for content production.
+
+Additionally, preparatory work began for the following Sprint 3 objectives:
+
+Advanced content filtering
+
+Event-driven content recommendation
+
+Mobile compatibility testing
+
+This sprint marked a major transition in the user-facing components of the InsightAI project. The AI architecture became more responsive, the speech module more fluent, and the visual system clearer and more structured. Collectively, these advances significantly contributed to the system’s maturity and overall functionality.

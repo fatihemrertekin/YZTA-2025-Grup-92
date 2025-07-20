@@ -570,6 +570,9 @@ The total target for Sprint 2 was set at 100 points.
 The entire project backlog consists of 300 points, distributed equally across three sprints. Sprint 2 builds upon the foundations established in Sprint 1 by introducing new modules.
 All tasks were structured to stay within the point limit and organized modularly to maintain continuity across components.
 
+<img width="2850" height="753" alt="spr2_table" src="https://github.com/user-attachments/assets/8b6eb368-c318-4e99-9361-07d543fa9f56" />
+
+
 1.3. Task Distribution and Backlog Structure
 In this sprint, the backlog was reorganized to focus on content enrichment, performance improvement, and expansion of data sources. The main task categories included:
 
@@ -603,6 +606,9 @@ All tasks were assigned based on sprint capacity and team competency. The final 
 As in Sprint 1, Daily Scrum meetings were held regularly via Google Meet. Each team member reported their progress, blockers, and plans. Immediate feedback and problem resolution were achieved during these meetings.
 Additional communication occurred over WhatsApp, and all logs were archived via a shared Google Drive link.
 
+<img width="869" height="1228" alt="spr2" src="https://github.com/user-attachments/assets/953c9521-3d0c-418c-8c81-e3bedaaffa8a" />
+
+
 Meeting Records:
 Sprint 2 – Daily Scrum Logs (The URL will be added in Sprint 3.)
 
@@ -628,6 +634,9 @@ In addition, feedback indicated that the initial version of the user interface s
 
 Sprint Review Participants:
 Furkan ÖZTÜRK, Enes KIRAÇ, Fatih Emre ERTEKİN, Kübra ÖZCAN, Emine ÇAKAR
+
+<img width="1228" height="805" alt="spr2_todo" src="https://github.com/user-attachments/assets/7d99cb19-b978-4f61-9fb2-bb2739b70a49" />
+
 
 5. Sprint Retrospective
 The team agreed to maintain the two-group structure established in Sprint 1. Responsibilities were reaffirmed as follows:

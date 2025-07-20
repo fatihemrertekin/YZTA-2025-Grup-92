@@ -3,6 +3,13 @@ Yapay Zeka Teknoloji Akademisi 2025 Grup 92 Bootcamp
 
 Takım adı: Yenilikçiler
 
+Takım üyeleri:
+Furkan ÖZTÜRK (Scrum Master)
+Enes KIRAÇ (Developer)
+Fatih Emre ERTEKİN (Developer)
+Kübra ÖZCAN (Developer)
+Emine ÇAKAR (Developer)
+
 # TrendLetter - AI-Powered Tech Newsletter & Learning Platform
 ## Product Requirements Document (PRD)
 

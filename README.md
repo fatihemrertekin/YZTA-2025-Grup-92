@@ -557,6 +557,7 @@ Sprint 2 Report
 
 Project Name: InsightAI – An Artificial Intelligence System Providing Access to Micro-Courses from Current Events
 Sprint Duration: [July 7, 2025 – July 20, 2025]
+
 Team Members: Furkan ÖZTÜRK, Enes KIRAÇ, Fatih Emre ERTEKİN, Kübra ÖZCAN, Emine ÇAKAR
 
 1. Sprint Planning and Configuration

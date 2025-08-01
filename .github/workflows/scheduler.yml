@@ -3,8 +3,8 @@ name: Tech News Digest Scheduler
 on:
   # Otomatik zamanlanmış görevler (İstanbul saati)
   schedule:
-    - cron: '0 8 * * *'  # Her gün saat 08:00 - RSS Crawl
-    - cron: '10 8 * * *' # Her gün saat 08:10 - Digest Send
+    - cron: '35 1 * * *'  # Her gün saat 08:00 - RSS Crawl
+    - cron: '36 1 * * *' # Her gün saat 08:10 - Digest Send
   
   # Manuel tetikleme
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'
+        python-version: '3.10'
     
     - name: Install dependencies
       run: |
@@ -55,10 +55,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
         FROM_NAME: ${{ secrets.FROM_NAME }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 8
-        DAILY_CRAWL_MINUTE: 0
-        DAILY_DIGEST_HOUR: 8
-        DAILY_DIGEST_MINUTE: 10
+        DAILY_CRAWL_HOUR: 1
+        DAILY_CRAWL_MINUTE: 35
+        DAILY_DIGEST_HOUR: 1
+        DAILY_DIGEST_MINUTE: 36
       run: |
         cd backend
         python -c "
@@ -103,10 +103,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
         FROM_NAME: ${{ secrets.FROM_NAME }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 8
-        DAILY_CRAWL_MINUTE: 0
-        DAILY_DIGEST_HOUR: 8
-        DAILY_DIGEST_MINUTE: 10
+        DAILY_CRAWL_HOUR: 1
+        DAILY_CRAWL_MINUTE: 35
+        DAILY_DIGEST_HOUR: 1
+        DAILY_DIGEST_MINUTE: 36
       run: |
         cd backend
         python -c "

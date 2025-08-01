@@ -58,6 +58,17 @@ Lütfen sadece özet metnini döndür, başka açıklama ekleme.
             return False
         return True
     
+    def _check_quota_exceeded(self, error_str: str) -> bool:
+        """Quota aşımı kontrolü"""
+        quota_indicators = [
+            "429", 
+            "quota", 
+            "exceeded", 
+            "free_tier_requests",
+            "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+        ]
+        return any(indicator in error_str.lower() for indicator in quota_indicators)
+    
     def _calculate_wait_time(self, total_articles: int) -> float:
         """Makale sayısına göre bekleme süresini hesapla"""
         if total_articles <= 0:
@@ -144,9 +155,11 @@ Bu makaleyi yukarıdaki kurallara göre özetle:
                 error_str = str(e)
                 logger.error(f"❌ Özet oluşturma hatası (deneme {attempt + 1}): {e}")
                 
-                # Quota aşımı hatası - hemen orijinal içerikle fallback'e geç
-                if "429" in error_str or "quota" in error_str.lower():
+                # Quota aşımı hatası kontrolü
+                if self._check_quota_exceeded(error_str):
                     logger.warning(f"🚫 Gemini API quota aşıldı, orijinal içerik döndürülüyor: {title}")
+                    # Quota aşımı durumunda günlük sayacı maksimuma çek
+                    self.daily_request_count = self.daily_limit
                     # Orijinal içeriği kısaltılmış halde döndür
                     if len(content) > 400:
                         return content[:400] + "..."
@@ -193,6 +206,15 @@ Bu makaleyi yukarıdaki kurallara göre özetle:
                     article["summary"] = summary
                     article["processed"] = 1
                     
+                    # Quota aşımı kontrolü - eğer quota aşıldıysa kalan makaleleri atla
+                    if self.daily_request_count >= self.daily_limit:
+                        logger.warning(f"🚫 Günlük quota aşıldı ({self.daily_request_count}/{self.daily_limit}), kalan makaleler atlanıyor...")
+                        # Kalan makaleler için orijinal içerik kullan
+                        for remaining_article in articles[index + 1:]:
+                            remaining_article["summary"] = f"Bu makale {remaining_article['title']} hakkında önemli bilgiler içeriyor."
+                            remaining_article["processed"] = 0
+                        return article
+                    
                     return article
                     
                 except Exception as e:
@@ -206,6 +228,11 @@ Bu makaleyi yukarıdaki kurallara göre özetle:
         for i, article in enumerate(articles):
             result = await summarize_with_semaphore(article.copy(), i)
             summarized_articles.append(result)
+            
+            # Quota aşımı durumunda döngüyü durdur
+            if self.daily_request_count >= self.daily_limit:
+                logger.warning(f"🚫 Quota aşımı nedeniyle işlem durduruldu. {i + 1}/{total_articles} makale işlendi.")
+                break
         
         successful = sum(1 for article in summarized_articles if article["processed"] == 1)
         logger.info(f"✅ {successful}/{total_articles} makale başarıyla özetlendi")

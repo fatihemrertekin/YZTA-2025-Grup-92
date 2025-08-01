@@ -113,7 +113,7 @@ export function LandingPage() {
                 <div className="flex items-center space-x-2 mb-6">
                   <Sparkles className="h-6 w-6 text-primary-500" />
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    Şimdi Başlayın
+                    Şimdi Abone Ol
                   </h2>
                 </div>
 
@@ -121,7 +121,7 @@ export function LandingPage() {
                   {/* Email */}
                   <div>
                     <label htmlFor="email" className="label">
-                      E-posta Adresiniz
+                      E-posta Adresi
                     </label>
                     <input
                       type="email"
@@ -145,21 +145,21 @@ export function LandingPage() {
 
                   {/* Categories */}
                   <div>
-                    <label className="label">
-                      İlgilendiğiniz Alanlar
-                    </label>
-                    <div className="space-y-2">
+                    <label className="label">İlgi Alanları</label>
+                    <div className="grid grid-cols-3 gap-2">
                       {categories.map((category) => (
-                        <label key={category} className="flex items-center space-x-3 cursor-pointer">
+                        <label key={category} className="flex items-center space-x-2 cursor-pointer">
                           <input
                             type="checkbox"
                             value={category}
                             className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
                             {...register('selected_categories', {
-                              required: 'En az bir kategori seçmelisiniz'
+                              required: 'En az bir ilgi alanı seçin'
                             })}
                           />
-                          <span className="text-gray-700 dark:text-gray-300">{category}</span>
+                          <span className="text-sm text-gray-700 dark:text-gray-300">
+                            {category}
+                          </span>
                         </label>
                       ))}
                     </div>
@@ -172,20 +172,22 @@ export function LandingPage() {
 
                   {/* Frequency */}
                   <div>
-                    <label className="label">
-                      Bülten Sıklığı
-                    </label>
-                    <select
-                      className="input"
-                      {...register('frequency', { required: 'Sıklık seçmelisiniz' })}
-                    >
-                      <option value="">Sıklık seçin</option>
-                      {frequencies.map((frequency) => (
-                        <option key={frequency} value={frequency}>
-                          {frequencyLabels[frequency]} özet
-                        </option>
+                    <label className="label">Sıklık</label>
+                    <div className="grid grid-cols-2 gap-2">
+                      {frequencies.map((freq) => (
+                        <label key={freq} className="flex items-center space-x-2 cursor-pointer">
+                          <input
+                            type="radio"
+                            value={freq}
+                            className="border-gray-300 text-primary-600 focus:ring-primary-500"
+                            {...register('frequency', { required: 'Sıklık seçin' })}
+                          />
+                          <span className="text-sm text-gray-700 dark:text-gray-300 capitalize">
+                            {frequencyLabels[freq]}
+                          </span>
+                        </label>
                       ))}
-                    </select>
+                    </div>
                     {errors.frequency && (
                       <p className="mt-1 text-sm text-red-600 dark:text-red-400">
                         {errors.frequency.message}
@@ -201,13 +203,10 @@ export function LandingPage() {
                     {isLoading ? (
                       <div className="flex items-center justify-center">
                         <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2" />
-                        Gönderiliyor...
+                        Abone oluyor...
                       </div>
                     ) : (
-                      <>
-                        <Mail className="mr-2 h-5 w-5" />
-                        Ücretsiz Abone Ol
-                      </>
+                      'Ücretsiz Abone Ol'
                     )}
                   </button>
                 </form>

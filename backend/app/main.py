@@ -66,7 +66,7 @@ app = FastAPI(
     
     ## 🔧 Özellikler
     - RSS kaynaklarından otomatik haber toplama
-         - Google Gemini AI ile makale özetleme
+    - Google Gemini AI ile makale özetleme
     - SendGrid ile HTML e-posta gönderimi
     - Kullanıcı tercihlerine göre kategori filtresi
     - Günlük/haftalık digest seçenekleri
@@ -84,9 +84,27 @@ app = FastAPI(
 )
 
 # CORS Middleware
+"""
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"] if settings.debug else ["https://yourdomain.com"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+"""
+
+# CORS Middleware - Frontend URL'lerini ekleyin
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",  # Development
+        "http://localhost:5173",  # Vite dev server
+        "https://your-frontend-app.onrender.com",  # Frontend production URL
+        "https://your-frontend-app.vercel.app",    # Vercel URL
+        "https://your-frontend-app.netlify.app",   # Netlify URL
+        "*" if settings.debug else []  # Development'da tüm origin'lere izin ver
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

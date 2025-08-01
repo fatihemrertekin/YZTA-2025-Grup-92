@@ -16,12 +16,13 @@ export function NewsletterArchive() {
 
   const loadData = async () => {
     try {
-      const [articlesRes, categoriesRes] = await Promise.all([
-        apiEndpoints.getArticles({ limit: 50 }),
-        apiEndpoints.getCategories()
-      ])
+      // Sadece makaleleri al, kategorileri frontend'de oluştur
+      const articlesRes = await apiEndpoints.getArticles({ limit: 100 })
       setArticles(articlesRes || [])
-      setCategories(['all', ...categoriesRes])
+      
+      // Makalelerden benzersiz kategorileri çıkar
+      const uniqueCategories = [...new Set(articlesRes?.map(article => article.category).filter(Boolean) || [])]
+      setCategories(['all', ...uniqueCategories])
     } catch (error) {
       toast.error('Makaleler yüklenemedi')
       console.error('Error loading data:', error)
@@ -38,7 +39,7 @@ export function NewsletterArchive() {
   })
 
   const formatDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
+    return new Date(dateString).toLocaleDateString('tr-TR', {
       year: 'numeric',
       month: 'short',
       day: 'numeric'
@@ -47,12 +48,16 @@ export function NewsletterArchive() {
 
   const getCategoryColor = (category) => {
     const colors = {
+      'AI': 'bg-purple-100 text-purple-800 dark:bg-purple-900/20 dark:text-purple-300',
+      'Software': 'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-300',
+      'Hardware': 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300',
+      'Other': 'bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-300',
       'Yapay Zeka': 'bg-purple-100 text-purple-800 dark:bg-purple-900/20 dark:text-purple-300',
       'Yazılım': 'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-300',
       'Donanım': 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300',
       'Diğer': 'bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-300'
     }
-    return colors[category] || colors['Diğer']
+    return colors[category] || colors['Other']
   }
 
   if (loading) {

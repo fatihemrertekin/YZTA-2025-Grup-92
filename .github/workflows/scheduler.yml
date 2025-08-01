@@ -4,8 +4,8 @@ on:
   # Otomatik zamanlanmış görevler (UTC zamanı)
   schedule:
     - cron: '*/5 * * * *'  # Her 5 dakikada bir test için
-    - cron: '0 2 * * *'    # Her gün saat 02:00 UTC (05:00 TR) - RSS Crawl
-    - cron: '10 2 * * *'   # Her gün saat 02:10 UTC (05:10 TR) - Digest Send
+    - cron: '40 23 * * *'    # Her gün saat 02:00 UTC (05:00 TR) - RSS Crawl
+    - cron: '41 23 * * *'   # Her gün saat 02:10 UTC (05:10 TR) - Digest Send
   
   # Manuel tetikleme
   workflow_dispatch:

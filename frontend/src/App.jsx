@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { ThemeProvider } from './contexts/ThemeContext'
 import { Layout } from './components/Layout'
@@ -22,7 +22,7 @@ function App() {
       <Router>
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
           <Routes>
-            {/* Public Routes */}
+            {/* Public Routes - Kullanıcı sayfaları */}
             <Route path="/" element={<Layout><LandingPage /></Layout>} />
             <Route path="/archive" element={<Layout><NewsletterArchive /></Layout>} />
             <Route path="/subscription" element={<Layout><SubscriptionManagement /></Layout>} />
@@ -34,7 +34,7 @@ function App() {
             <Route path="/blog" element={<Layout><Blog /></Layout>} />
             <Route path="/careers" element={<Layout><Careers /></Layout>} />
             
-            {/* Admin Routes */}
+            {/* Admin Routes - Geliştirici erişimi */}
             <Route path="/admin" element={<Layout><AdminPanel /></Layout>} />
           </Routes>
           

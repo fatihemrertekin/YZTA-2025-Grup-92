@@ -1,17 +1,12 @@
 // API Base URL - Environment'a göre otomatik seçim
 const getApiBaseUrl = () => {
-  // Vercel'de environment variable'dan al
   if (import.meta.env.VITE_API_URL) {
     return import.meta.env.VITE_API_URL
   }
-  
-  // Development'da localhost
   if (import.meta.env.DEV) {
     return 'http://localhost:8000'
   }
-  
-  // Production'da Render backend URL (varsayılan)
-  return 'https://tech-news-digest-backend.onrender.com'
+  return 'https://yzta-2025-grup-92.onrender.com'
 }
 
 const API_BASE_URL = getApiBaseUrl()

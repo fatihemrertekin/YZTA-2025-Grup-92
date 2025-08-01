@@ -12,7 +12,9 @@ import {
   Clock,
   AlertCircle,
   CheckCircle,
-  XCircle
+  XCircle,
+  Shield,
+  Info
 } from 'lucide-react'
 import { apiEndpoints } from '../utils/api'
 import { toast } from 'react-hot-toast'
@@ -24,6 +26,7 @@ export function AdminPanel() {
   const [loading, setLoading] = useState(true)
   const [crawling, setCrawling] = useState(false)
   const [testingAI, setTestingAI] = useState(false)
+  const [showSecurityWarning, setShowSecurityWarning] = useState(true)
 
   useEffect(() => {
     loadDashboardData()
@@ -109,6 +112,38 @@ export function AdminPanel() {
   return (
     <div className="pt-16 min-h-screen bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Security Warning */}
+        {showSecurityWarning && (
+          <div className="mb-8 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
+            <div className="flex items-start space-x-3">
+              <Shield className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5" />
+              <div className="flex-1">
+                <h3 className="text-sm font-medium text-yellow-800 dark:text-yellow-200">
+                  Geliştirici Erişimi
+                </h3>
+                <p className="text-sm text-yellow-700 dark:text-yellow-300 mt-1">
+                  Bu panel sadece geliştirici ve yönetici erişimi içindir. 
+                  Hassas sistem bilgileri ve yönetim işlemleri burada yapılır.
+                </p>
+                <div className="mt-3 flex space-x-3">
+                  <button
+                    onClick={() => setShowSecurityWarning(false)}
+                    className="text-xs bg-yellow-100 dark:bg-yellow-800 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded"
+                  >
+                    Anladım
+                  </button>
+                  <a
+                    href="/"
+                    className="text-xs text-yellow-600 dark:text-yellow-400 hover:underline"
+                  >
+                    Ana Sayfaya Dön
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -305,10 +340,10 @@ export function AdminPanel() {
 
         {/* Recent Activity */}
         <div className="card">
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6 flex items-center">
-              <Clock className="h-5 w-5 mr-2" />
-              Sistem Bilgileri
-            </h3>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6 flex items-center">
+            <Clock className="h-5 w-5 mr-2" />
+            Sistem Bilgileri
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div>
               <dt className="text-sm font-medium text-gray-600 dark:text-gray-400">Sürüm</dt>
@@ -325,6 +360,23 @@ export function AdminPanel() {
             <div>
               <dt className="text-sm font-medium text-gray-600 dark:text-gray-400">Aktif Zaman</dt>
               <dd className="text-lg font-semibold text-gray-900 dark:text-white">Çalışıyor</dd>
+            </div>
+          </div>
+        </div>
+
+        {/* Developer Info */}
+        <div className="mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+          <div className="flex items-start space-x-3">
+            <Info className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-0.5" />
+            <div>
+              <h3 className="text-sm font-medium text-blue-800 dark:text-blue-200">
+                Geliştirici Bilgileri
+              </h3>
+              <p className="text-sm text-blue-700 dark:text-blue-300 mt-1">
+                Backend API: <code className="bg-blue-100 dark:bg-blue-800 px-1 rounded">https://yzta-2025-grup-92.onrender.com</code><br/>
+                API Docs: <a href="https://yzta-2025-grup-92.onrender.com/docs" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">/docs</a><br/>
+                Health Check: <a href="https://yzta-2025-grup-92.onrender.com/health" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">/health</a>
+              </p>
             </div>
           </div>
         </div>

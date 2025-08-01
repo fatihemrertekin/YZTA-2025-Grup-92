@@ -3,8 +3,9 @@ name: Tech News Digest Scheduler
 on:
   # Otomatik zamanlanmış görevler (UTC zamanı)
   schedule:
-    - cron: '5 11 * * *'  # Her gün saat 02:00 UTC (05:00 TR) - RSS Crawl
-    - cron: '6 11 * * *' # Her gün saat 02:10 UTC (05:10 TR) - Digest Send
+    - cron: '*/5 * * * *'  # Her 5 dakikada bir test için
+    - cron: '0 2 * * *'    # Her gün saat 02:00 UTC (05:00 TR) - RSS Crawl
+    - cron: '10 2 * * *'   # Her gün saat 02:10 UTC (05:10 TR) - Digest Send
   
   # Manuel tetikleme
   workflow_dispatch:
@@ -54,10 +55,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 11
-        DAILY_CRAWL_MINUTE: 5
-        DAILY_DIGEST_HOUR: 11
-        DAILY_DIGEST_MINUTE: 6
+        DAILY_CRAWL_HOUR: 2
+        DAILY_CRAWL_MINUTE: 0
+        DAILY_DIGEST_HOUR: 2
+        DAILY_DIGEST_MINUTE: 10
       run: |
         cd backend
         python test_scheduler.py crawl
@@ -74,10 +75,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 11
-        DAILY_CRAWL_MINUTE: 5
-        DAILY_DIGEST_HOUR: 11
-        DAILY_DIGEST_MINUTE: 6
+        DAILY_CRAWL_HOUR: 2
+        DAILY_CRAWL_MINUTE: 0
+        DAILY_DIGEST_HOUR: 2
+        DAILY_DIGEST_MINUTE: 10
       run: |
         cd backend
         python test_scheduler.py digest
@@ -94,10 +95,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 11
-        DAILY_CRAWL_MINUTE: 5
-        DAILY_DIGEST_HOUR: 11
-        DAILY_DIGEST_MINUTE: 6
+        DAILY_CRAWL_HOUR: 2
+        DAILY_CRAWL_MINUTE: 0
+        DAILY_DIGEST_HOUR: 2
+        DAILY_DIGEST_MINUTE: 10
       run: |
         cd backend
         python test_scheduler.py both

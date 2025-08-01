@@ -2,15 +2,20 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'react-hot-toast'
 import { 
-  Zap, 
+  ArrowRight, 
+  Sparkles, 
   Mail, 
+  Zap, 
   Brain, 
-  Clock, 
-  Shield, 
-  Sparkles,
-  ArrowRight,
-  Check,
-  Star
+  BookOpen, 
+  Users, 
+  Star,
+  TrendingUp,
+  Lightbulb,
+  GraduationCap,
+  Target,
+  Clock,
+  CheckCircle
 } from 'lucide-react'
 import { apiEndpoints } from '../utils/api'
 
@@ -52,18 +57,21 @@ export function LandingPage() {
                 <span className="px-3 py-1 text-sm font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/20 dark:text-primary-300 rounded-full">
                   ✨ Powered by Gemini AI
                 </span>
+                <span className="px-3 py-1 text-sm font-medium bg-green-100 text-green-700 dark:bg-green-900/20 dark:text-green-300 rounded-full">
+                  🎓 Eğitim Odaklı
+                </span>
               </div>
               
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-                Önde Kalın
-                <span className="text-gradient block">Yapay Zeka Destekli</span>
-                Teknoloji Haberleri ile
+                Teknoloji Dünyasını
+                <span className="text-gradient block">Öğrenin ve Takip Edin</span>
+                Tek Platformda
               </h1>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                TechCrunch, The Verge ve diğer kaynaklardan günlük seçilen teknoloji haberlerini alın.
-                Yapay zekamız <strong>Yapay Zeka, Yazılım ve Donanım</strong> alanındaki son gelişmeleri özetliyor, 
-                önemli hiçbir şeyi kaçırmıyorsunuz.
+                Sadece haber değil, <strong>eğitici içerikler</strong> de sunuyoruz. TechCrunch, The Verge ve diğer kaynaklardan 
+                seçilen haberleri <strong>AI destekli analizler</strong> ile zenginleştiriyor, 
+                <strong>Yapay Zeka, Yazılım ve Donanım</strong> alanlarında bilginizi artırıyoruz.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -71,7 +79,7 @@ export function LandingPage() {
                   href="/#/archive"
                   className="btn-primary px-8 py-4 text-lg group"
                 >
-                  Ücretsiz Bültene Başla
+                  Ücretsiz Başla
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
@@ -90,11 +98,11 @@ export function LandingPage() {
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-gray-900 dark:text-white">50+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Mutlu Okuyucu</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Öğrenen Kullanıcı</div>
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-gray-900 dark:text-white">Günlük</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Taze İçerik</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Eğitim İçeriği</div>
                 </div>
               </div>
             </div>
@@ -105,7 +113,7 @@ export function LandingPage() {
                 <div className="flex items-center space-x-2 mb-6">
                   <Sparkles className="h-6 w-6 text-primary-500" />
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    Şimdi Abone Ol
+                    Şimdi Başlayın
                   </h2>
                 </div>
 
@@ -113,7 +121,7 @@ export function LandingPage() {
                   {/* Email */}
                   <div>
                     <label htmlFor="email" className="label">
-                      E-posta Adresi
+                      E-posta Adresiniz
                     </label>
                     <input
                       type="email"
@@ -137,21 +145,21 @@ export function LandingPage() {
 
                   {/* Categories */}
                   <div>
-                    <label className="label">İlgi Alanları</label>
-                    <div className="grid grid-cols-3 gap-2">
+                    <label className="label">
+                      İlgilendiğiniz Alanlar
+                    </label>
+                    <div className="space-y-2">
                       {categories.map((category) => (
-                        <label key={category} className="flex items-center space-x-2 cursor-pointer">
+                        <label key={category} className="flex items-center space-x-3 cursor-pointer">
                           <input
                             type="checkbox"
                             value={category}
                             className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
                             {...register('selected_categories', {
-                              required: 'En az bir ilgi alanı seçin'
+                              required: 'En az bir kategori seçmelisiniz'
                             })}
                           />
-                          <span className="text-sm text-gray-700 dark:text-gray-300">
-                            {category}
-                          </span>
+                          <span className="text-gray-700 dark:text-gray-300">{category}</span>
                         </label>
                       ))}
                     </div>
@@ -164,22 +172,20 @@ export function LandingPage() {
 
                   {/* Frequency */}
                   <div>
-                    <label className="label">Sıklık</label>
-                    <div className="grid grid-cols-2 gap-2">
-                      {frequencies.map((freq) => (
-                        <label key={freq} className="flex items-center space-x-2 cursor-pointer">
-                          <input
-                            type="radio"
-                            value={freq}
-                            className="border-gray-300 text-primary-600 focus:ring-primary-500"
-                            {...register('frequency', { required: 'Sıklık seçin' })}
-                          />
-                          <span className="text-sm text-gray-700 dark:text-gray-300 capitalize">
-                            {frequencyLabels[freq]}
-                          </span>
-                        </label>
+                    <label className="label">
+                      Bülten Sıklığı
+                    </label>
+                    <select
+                      className="input"
+                      {...register('frequency', { required: 'Sıklık seçmelisiniz' })}
+                    >
+                      <option value="">Sıklık seçin</option>
+                      {frequencies.map((frequency) => (
+                        <option key={frequency} value={frequency}>
+                          {frequencyLabels[frequency]} özet
+                        </option>
                       ))}
-                    </div>
+                    </select>
                     {errors.frequency && (
                       <p className="mt-1 text-sm text-red-600 dark:text-red-400">
                         {errors.frequency.message}
@@ -195,16 +201,19 @@ export function LandingPage() {
                     {isLoading ? (
                       <div className="flex items-center justify-center">
                         <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2" />
-                        Abone oluyor...
+                        Gönderiliyor...
                       </div>
                     ) : (
-                      'Ücretsiz Abone Ol'
+                      <>
+                        <Mail className="mr-2 h-5 w-5" />
+                        Ücretsiz Abone Ol
+                      </>
                     )}
                   </button>
                 </form>
 
                 <p className="text-xs text-gray-500 dark:text-gray-400 mt-4 text-center">
-                  Spam yok. İstediğiniz zaman aboneliği iptal edebilirsiniz. Gemini AI tarafından desteklenir.
+                  Spam yok, sadece değerli içerik. İstediğiniz zaman aboneliğinizi iptal edebilirsiniz.
                 </p>
               </div>
             </div>
@@ -213,104 +222,180 @@ export function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-white dark:bg-gray-800">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Neden TechNews Seçmelisiniz?
+              Neden TechNews?
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Sadece haber değil, teknoloji dünyasını anlamamı sağlayan eğitici platform
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="card text-center">
+              <div className="p-3 rounded-lg bg-purple-100 dark:bg-purple-900/20 w-fit mx-auto mb-4">
+                <Brain className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                AI Destekli Analiz
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Gemini AI ile haberlerin arkasındaki teknolojiyi anlayın. Karmaşık konular basit açıklamalarla.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/20 w-fit mx-auto mb-4">
+                <BookOpen className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Eğitici İçerik
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Sadece ne olduğunu değil, nasıl çalıştığını da öğrenin. Teknoloji kavramları açıklanıyor.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="p-3 rounded-lg bg-green-100 dark:bg-green-900/20 w-fit mx-auto mb-4">
+                <Target className="h-8 w-8 text-green-600 dark:text-green-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Kişiselleştirilmiş Öğrenme
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                İlgi alanlarınıza göre özelleştirilmiş içerik. Kendi hızınızda öğrenin.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="p-3 rounded-lg bg-yellow-100 dark:bg-yellow-900/20 w-fit mx-auto mb-4">
+                <TrendingUp className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Trend Analizi
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Hangi teknolojilerin yükseldiğini, hangilerinin düştüğünü takip edin.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="p-3 rounded-lg bg-red-100 dark:bg-red-900/20 w-fit mx-auto mb-4">
+                <Lightbulb className="h-8 w-8 text-red-600 dark:text-red-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Pratik Uygulamalar
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Öğrendiğiniz teknolojilerin gerçek hayatta nasıl kullanıldığını görün.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="p-3 rounded-lg bg-indigo-100 dark:bg-indigo-900/20 w-fit mx-auto mb-4">
+                <GraduationCap className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                Sürekli Gelişim
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Teknoloji dünyasındaki değişimleri takip ederek kariyerinizi geliştirin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Learning Path Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Öğrenme Yolculuğunuz
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Gelişmiş yapay zeka, mükemmel teknoloji özeti için seçilen içerikle buluşuyor
+              Teknoloji dünyasını adım adım keşfedin
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="card text-center">
+              <div className="text-3xl mb-4">🎯</div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                1. Temel Kavramlar
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
+                AI, ML, blockchain gibi temel teknoloji kavramlarını öğrenin
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="text-3xl mb-4">🔍</div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                2. Trend Analizi
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
+                Hangi teknolojilerin geleceği şekillendirdiğini anlayın
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="text-3xl mb-4">💡</div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                3. Pratik Uygulamalar
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
+                Teknolojilerin gerçek hayatta nasıl kullanıldığını görün
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="text-3xl mb-4">🚀</div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                4. Gelecek Vizyonu
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
+                Teknoloji dünyasının geleceğini tahmin edin
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Kullanıcılarımız Ne Diyor?
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300">
+              Teknoloji dünyasını anlamamı sağladı
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: Brain,
-                title: 'Yapay Zeka Destekli Özetler',
-                description: 'Google Gemini karmaşık makaleleri analiz ediyor ve sindirilebilir içgörülere dönüştürüyor.',
-                color: 'text-purple-500'
+                name: "Ahmet Yılmaz",
+                role: "Yazılım Geliştirici",
+                avatar: "👨‍💻",
+                content: "TechNews sayesinde AI konusunda çok şey öğrendim. Haberlerin arkasındaki teknolojiyi anlamak harika."
               },
               {
-                icon: Clock,
-                title: 'Zaman Tasarrufu',
-                description: '20+ makalenin özünü 5 dakikada okuyun. Meşgul profesyoneller için mükemmel.',
-                color: 'text-blue-500'
+                name: "Zeynep Kaya",
+                role: "Ürün Yöneticisi",
+                avatar: "👩‍💼",
+                content: "Sadece haber değil, eğitici içerikler de var. Teknoloji trendlerini takip etmek artık çok kolay."
               },
               {
-                icon: Shield,
-                title: 'Güvenilir Kaynaklar',
-                description: 'TechCrunch, The Verge, ArXiv ve diğer saygın teknoloji yayınlarından seçilen haberler.',
-                color: 'text-green-500'
-              },
-              {
-                icon: Zap,
-                title: 'Anlık Teslimat',
-                description: 'Taze içerik tercihinize göre günlük veya haftalık olarak gelen kutunuza teslim edilir.',
-                color: 'text-yellow-500'
-              },
-              {
-                icon: Mail,
-                title: 'Güzel Tasarım',
-                description: 'Her cihazda kolayca okunabilen temiz, mobil uyumlu e-postalar.',
-                color: 'text-red-500'
-              },
-              {
-                icon: Sparkles,
-                title: 'Kişiselleştirilmiş',
-                description: 'İlgi alanlarınızı seçin: Yapay Zeka, Yazılım, Donanım veya hepsini.',
-                color: 'text-indigo-500'
-              }
-            ].map((feature, index) => (
-              <div
-                key={feature.title}
-                className="card group hover:scale-105 transition-transform duration-300"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className={`p-3 rounded-lg bg-gray-100 dark:bg-gray-700 w-fit mb-4 ${feature.color}`}>
-                  <feature.icon className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Geliştiriciler Ne Diyor
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Sarah Chen',
-                role: 'Kıdemli Geliştirici',
-                content: 'TechNews teknoloji haberlerini okurken saatlerce zaman tasarrufu sağlıyor. AI özetleri çok isabetli!',
-                avatar: '👩‍💻'
-              },
-              {
-                name: 'Mark Rodriguez',
-                role: 'CTO',
-                content: 'AI trendlerini takip etmek için mükemmel. Günlük özet ekibimizi bilgili tutuyor.',
-                avatar: '👨‍💼'
-              },
-              {
-                name: 'Lisa Park',
-                role: 'Ürün Müdürü',
-                content: 'Temiz format, alakalı içerik. Sabah rutinimde ihtiyacım olan tam olarak bu.',
-                avatar: '👩‍🚀'
+                name: "Mehmet Demir",
+                role: "Öğrenci",
+                avatar: "🎓",
+                content: "Karmaşık teknoloji konularını basit şekilde açıklıyorlar. Öğrenme sürecim çok hızlandı."
               }
             ].map((testimonial, index) => (
               <div key={testimonial.name} className="card text-center">
@@ -346,14 +431,14 @@ export function LandingPage() {
             Teknoloji Bilginizi Bir Üst Seviyeye Çıkarmaya Hazır mısınız?
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Her gün daha akıllı hale gelen yüzlerce geliştiriciye katılın
+            Her gün daha akıllı hale gelen yüzlerce öğrenciye katılın
           </p>
           <a
             href="/#/subscription"
             className="inline-flex items-center px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             <Mail className="mr-2 h-5 w-5" />
-İlk Özetinizi Alın
+            İlk Özetinizi Alın
           </a>
         </div>
       </section>

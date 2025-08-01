@@ -223,7 +223,7 @@ export function EmailPreview() {
         {/* CTA */}
         <div style={{ textAlign: 'center', marginBottom: '24px' }}>
           <a 
-            href="http://localhost:3000/archive"
+            href="/#/archive"
             style={{
               display: 'inline-block',
               backgroundColor: '#3B82F6',
@@ -235,7 +235,7 @@ export function EmailPreview() {
               fontSize: '14px'
             }}
           >
-            📰 Tam Arşivi Göz At
+            📰 Tam Arşive Göz At
           </a>
         </div>
       </div>

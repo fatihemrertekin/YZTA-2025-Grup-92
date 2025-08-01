@@ -68,17 +68,17 @@ export function LandingPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="#subscribe"
+                  href="/#/archive"
                   className="btn-primary px-8 py-4 text-lg group"
                 >
                   Ücretsiz Bültene Başla
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
-                  href="/preview"
+                  href="/#/preview"
                   className="btn-ghost px-8 py-4 text-lg"
                 >
-Örnek Gör
+                  Örnek Gör
                 </a>
               </div>
 
@@ -349,7 +349,7 @@ export function LandingPage() {
             Her gün daha akıllı hale gelen yüzlerce geliştiriciye katılın
           </p>
           <a
-            href="#subscribe"
+            href="/#/subscription"
             className="inline-flex items-center px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             <Mail className="mr-2 h-5 w-5" />

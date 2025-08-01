@@ -3,8 +3,8 @@ name: Tech News Digest Scheduler
 on:
   # Otomatik zamanlanmış görevler (İstanbul saati)
   schedule:
-    - cron: '35 1 * * *'  # Her gün saat 08:00 - RSS Crawl
-    - cron: '36 1 * * *' # Her gün saat 08:10 - Digest Send
+    - cron: '35 1 * * *'  # Her gün saat 01:35 - RSS Crawl (test için)
+    - cron: '36 1 * * *'  # Her gün saat 01:36 - Digest Send (test için)
   
   # Manuel tetikleme
   workflow_dispatch:
@@ -27,7 +27,6 @@ on:
 jobs:
   scheduler:
     runs-on: ubuntu-latest
-    timezone: Europe/Istanbul
     
     steps:
     - name: Checkout code

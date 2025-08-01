@@ -3,9 +3,8 @@ name: Tech News Digest Scheduler
 on:
   # Otomatik zamanlanmış görevler (UTC zamanı)
   schedule:
-    - cron: '*/5 * * * *'  # Her 5 dakikada bir test için
-    - cron: '40 23 * * *'    # Her gün saat 02:00 UTC (05:00 TR) - RSS Crawl
-    - cron: '41 23 * * *'   # Her gün saat 02:10 UTC (05:10 TR) - Digest Send
+    - cron: '50 4 * * *'    # Her gün saat 04:50 UTC (07:50 TR) - RSS Crawl
+    - cron: '55 4 * * *'   # Her gün saat 04:55 UTC (07:55 TR) - Digest Send
   
   # Manuel tetikleme
   workflow_dispatch:

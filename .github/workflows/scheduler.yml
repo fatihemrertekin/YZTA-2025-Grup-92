@@ -3,8 +3,8 @@ name: Tech News Digest Scheduler
 on:
   # Otomatik zamanlanmış görevler (İstanbul saati)
   schedule:
-    - cron: '35 1 * * *'  # Her gün saat 01:35 - RSS Crawl (test için)
-    - cron: '36 1 * * *'  # Her gün saat 01:36 - Digest Send (test için)
+    - cron: '45 1 * * *'  # Her gün saat 01:35 - RSS Crawl (test için)
+    - cron: '46 1 * * *'  # Her gün saat 01:36 - Digest Send (test için)
   
   # Manuel tetikleme
   workflow_dispatch:
@@ -55,9 +55,9 @@ jobs:
         FROM_NAME: ${{ secrets.FROM_NAME }}
         DATABASE_TYPE: postgresql
         DAILY_CRAWL_HOUR: 1
-        DAILY_CRAWL_MINUTE: 35
+        DAILY_CRAWL_MINUTE: 45
         DAILY_DIGEST_HOUR: 1
-        DAILY_DIGEST_MINUTE: 36
+        DAILY_DIGEST_MINUTE: 46
       run: |
         cd backend
         python test_scheduler.py crawl
@@ -75,9 +75,9 @@ jobs:
         FROM_NAME: ${{ secrets.FROM_NAME }}
         DATABASE_TYPE: postgresql
         DAILY_CRAWL_HOUR: 1
-        DAILY_CRAWL_MINUTE: 35
+        DAILY_CRAWL_MINUTE: 45
         DAILY_DIGEST_HOUR: 1
-        DAILY_DIGEST_MINUTE: 36
+        DAILY_DIGEST_MINUTE: 46
       run: |
         cd backend
         python test_scheduler.py digest

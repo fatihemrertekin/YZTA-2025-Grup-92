@@ -1,0 +1,63 @@
+services:
+  # FastAPI Backend
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - TZ=Europe/Istanbul
+      - DATABASE_TYPE=postgresql
+      - DATABASE_URL=postgresql://tech_user:tech_password@postgres:5432/tech_news_db
+      - DAILY_CRAWL_HOUR=8
+      - DAILY_CRAWL_MINUTE=0
+      - DAILY_DIGEST_HOUR=8
+      - DAILY_DIGEST_MINUTE=10
+
+    volumes:
+      - .:/app
+    depends_on:
+      - postgres
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - tech_network
+
+  # PostgreSQL Veritabanı
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      TZ: Europe/Istanbul
+      POSTGRES_DB: tech_news_db
+      POSTGRES_USER: tech_user
+      POSTGRES_PASSWORD: tech_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - tech_network
+
+  # pgAdmin (PostgreSQL yönetimi)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    environment:
+      TZ: Europe/Istanbul
+      PGADMIN_DEFAULT_EMAIL: admin@techdigest.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    networks:
+      - tech_network
+
+volumes:
+  postgres_data:
+  pgadmin_data:
+
+networks:
+  tech_network:
+    driver: bridge 

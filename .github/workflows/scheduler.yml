@@ -54,10 +54,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 2
-        DAILY_CRAWL_MINUTE: 0
-        DAILY_DIGEST_HOUR: 2
-        DAILY_DIGEST_MINUTE: 10
+        DAILY_CRAWL_HOUR: 4
+        DAILY_CRAWL_MINUTE: 50
+        DAILY_DIGEST_HOUR: 4
+        DAILY_DIGEST_MINUTE: 55
       run: |
         cd backend
         python test_scheduler.py crawl
@@ -74,10 +74,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 2
-        DAILY_CRAWL_MINUTE: 0
-        DAILY_DIGEST_HOUR: 2
-        DAILY_DIGEST_MINUTE: 10
+        DAILY_CRAWL_HOUR: 4
+        DAILY_CRAWL_MINUTE: 50
+        DAILY_DIGEST_HOUR: 4
+        DAILY_DIGEST_MINUTE: 55
       run: |
         cd backend
         python test_scheduler.py digest
@@ -94,10 +94,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 2
-        DAILY_CRAWL_MINUTE: 0
-        DAILY_DIGEST_HOUR: 2
-        DAILY_DIGEST_MINUTE: 10
+        DAILY_CRAWL_HOUR: 4
+        DAILY_CRAWL_MINUTE: 50
+        DAILY_DIGEST_HOUR: 4
+        DAILY_DIGEST_MINUTE: 55
       run: |
         cd backend
         python test_scheduler.py both

@@ -1,9 +1,25 @@
-// API Base URL - Backend'den gelecek
-const API_BASE_URL = 'http://localhost:8000'
+// API Base URL - Environment'a göre otomatik seçim
+const getApiBaseUrl = () => {
+  // Vercel'de environment variable'dan al
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL
+  }
+  
+  // Development'da localhost
+  if (import.meta.env.DEV) {
+    return 'http://localhost:8000'
+  }
+  
+  // Production'da Render backend URL (varsayılan)
+  return 'https://tech-news-digest-backend.onrender.com'
+}
+
+const API_BASE_URL = getApiBaseUrl()
 
 class ApiClient {
   constructor(baseURL = API_BASE_URL) {
     this.baseURL = baseURL
+    console.log('🌐 API Base URL:', this.baseURL)
   }
 
   async request(endpoint, options = {}) {
@@ -33,6 +49,7 @@ class ApiClient {
       return await response.text()
     } catch (error) {
       console.error('API Error:', error)
+      console.error('Request URL:', url)
       throw error
     }
   }
@@ -69,6 +86,18 @@ class ApiClient {
       method: 'DELETE',
     })
   }
+
+  // API bağlantı testi
+  async testConnection() {
+    try {
+      const response = await this.get('/health')
+      console.log('✅ API bağlantısı başarılı:', response)
+      return true
+    } catch (error) {
+      console.error('❌ API bağlantı hatası:', error)
+      return false
+    }
+  }
 }
 
 // Create API client instance
@@ -99,5 +128,8 @@ export const apiEndpoints = {
   getSystemLogs: () => api.get('/api/v1/admin/logs'),
   getSystemHealth: () => api.get('/api/v1/admin/health'),
 }
+
+// API test fonksiyonu
+export const testApiConnection = () => api.testConnection()
 
 export default api 

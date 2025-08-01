@@ -3,8 +3,8 @@ name: Tech News Digest Scheduler
 on:
   # Otomatik zamanlanmış görevler (İstanbul saati)
   schedule:
-    - cron: '45 1 * * *'  # Her gün saat 01:35 - RSS Crawl (test için)
-    - cron: '46 1 * * *'  # Her gün saat 01:36 - Digest Send (test için)
+    - cron: '45 1 * * *'  # Her gün saat 01:45 - RSS Crawl (test için)
+    - cron: '46 1 * * *'  # Her gün saat 01:46 - Digest Send (test için)
   
   # Manuel tetikleme
   workflow_dispatch:
@@ -47,12 +47,12 @@ jobs:
       env:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-        SMTP_PORT: ${{ secrets.SMTP_PORT }}
-        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
-        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
-        FROM_NAME: ${{ secrets.FROM_NAME }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER || 'smtp.gmail.com' }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME || 'your_email@gmail.com' }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD || 'your_app_password' }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'your_email@gmail.com' }}
+        FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
         DAILY_CRAWL_HOUR: 1
         DAILY_CRAWL_MINUTE: 45
@@ -67,12 +67,12 @@ jobs:
       env:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-        SMTP_PORT: ${{ secrets.SMTP_PORT }}
-        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
-        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
-        FROM_NAME: ${{ secrets.FROM_NAME }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER || 'smtp.gmail.com' }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME || 'your_email@gmail.com' }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD || 'your_app_password' }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'your_email@gmail.com' }}
+        FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
         DAILY_CRAWL_HOUR: 1
         DAILY_CRAWL_MINUTE: 45
@@ -87,17 +87,17 @@ jobs:
       env:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-        SMTP_PORT: ${{ secrets.SMTP_PORT }}
-        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
-        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
-        FROM_NAME: ${{ secrets.FROM_NAME }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER || 'smtp.gmail.com' }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME || 'your_email@gmail.com' }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD || 'your_app_password' }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'your_email@gmail.com' }}
+        FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
         DAILY_CRAWL_HOUR: 1
-        DAILY_CRAWL_MINUTE: 35
+        DAILY_CRAWL_MINUTE: 45
         DAILY_DIGEST_HOUR: 1
-        DAILY_DIGEST_MINUTE: 36
+        DAILY_DIGEST_MINUTE: 46
       run: |
         cd backend
         python test_scheduler.py both

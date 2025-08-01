@@ -1,10 +1,10 @@
 name: Tech News Digest Scheduler
 
 on:
-  # Otomatik zamanlanmış görevler (İstanbul saati)
+  # Otomatik zamanlanmış görevler (UTC zamanı)
   schedule:
-    - cron: '52 1 * * *'  # Her gün saat 01:45 - RSS Crawl (test için)
-    - cron: '53 1 * * *'  # Her gün saat 01:46 - Digest Send (test için)
+    - cron: '0 2 * * *'  # Her gün saat 02:00 UTC (05:00 TR) - RSS Crawl
+    - cron: '10 2 * * *' # Her gün saat 02:10 UTC (05:10 TR) - Digest Send
   
   # Manuel tetikleme
   workflow_dispatch:
@@ -54,10 +54,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 1
-        DAILY_CRAWL_MINUTE: 52
-        DAILY_DIGEST_HOUR: 1
-        DAILY_DIGEST_MINUTE: 53
+        DAILY_CRAWL_HOUR: 2
+        DAILY_CRAWL_MINUTE: 0
+        DAILY_DIGEST_HOUR: 2
+        DAILY_DIGEST_MINUTE: 10
       run: |
         cd backend
         python test_scheduler.py crawl
@@ -74,10 +74,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 1
-        DAILY_CRAWL_MINUTE: 52
-        DAILY_DIGEST_HOUR: 1
-        DAILY_DIGEST_MINUTE: 53
+        DAILY_CRAWL_HOUR: 2
+        DAILY_CRAWL_MINUTE: 0
+        DAILY_DIGEST_HOUR: 2
+        DAILY_DIGEST_MINUTE: 10
       run: |
         cd backend
         python test_scheduler.py digest
@@ -94,10 +94,10 @@ jobs:
         FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
         FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
         DATABASE_TYPE: postgresql
-        DAILY_CRAWL_HOUR: 1
-        DAILY_CRAWL_MINUTE: 52
-        DAILY_DIGEST_HOUR: 1
-        DAILY_DIGEST_MINUTE: 53
+        DAILY_CRAWL_HOUR: 2
+        DAILY_CRAWL_MINUTE: 0
+        DAILY_DIGEST_HOUR: 2
+        DAILY_DIGEST_MINUTE: 10
       run: |
         cd backend
         python test_scheduler.py both
@@ -108,4 +108,5 @@ jobs:
         echo "🎯 Test tamamlandı!"
         echo "📊 Job Type: ${{ github.event.inputs.job_type || 'scheduled' }}"
         echo "🕐 Test Zamanı: $(date)"
-        echo "🌍 Timezone: Europe/Istanbul" 
+        echo "🌍 Timezone: UTC"
+        echo "🇹🇷 Türkiye Saati: $(date -d '+3 hours' '+%Y-%m-%d %H:%M:%S %Z')" 

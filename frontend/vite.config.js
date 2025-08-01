@@ -43,4 +43,10 @@ export default defineConfig({
     port: 4173,
     host: true,
   },
+  
+  // Base path ayarı
+  base: '/',
+  
+  // SPA routing için
+  appType: 'spa',
 })

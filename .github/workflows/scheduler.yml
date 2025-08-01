@@ -1,0 +1,148 @@
+name: Tech News Digest Scheduler
+
+on:
+  # Otomatik zamanlanmış görevler (İstanbul saati)
+  schedule:
+    - cron: '0 8 * * *'  # Her gün saat 08:00 - RSS Crawl
+    - cron: '10 8 * * *' # Her gün saat 08:10 - Digest Send
+  
+  # Manuel tetikleme
+  workflow_dispatch:
+    inputs:
+      job_type:
+        description: 'Hangi job çalıştırılsın?'
+        required: true
+        default: 'crawl'
+        type: choice
+        options:
+        - crawl
+        - digest
+        - both
+      test_time:
+        description: 'Test zamanı (opsiyonel)'
+        required: false
+        type: string
+        default: ''
+
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    timezone: Europe/Istanbul
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+    
+    - name: Run RSS Crawl
+      if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'crawl' || github.event.inputs.job_type == 'both'))
+      env:
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+        FROM_NAME: ${{ secrets.FROM_NAME }}
+        DATABASE_TYPE: postgresql
+        DAILY_CRAWL_HOUR: 8
+        DAILY_CRAWL_MINUTE: 0
+        DAILY_DIGEST_HOUR: 8
+        DAILY_DIGEST_MINUTE: 10
+      run: |
+        cd backend
+        python -c "
+        import asyncio
+        import sys
+        import os
+        from datetime import datetime
+        import pytz
+        
+        # Türkiye saati
+        tz = pytz.timezone('Europe/Istanbul')
+        current_time = datetime.now(tz)
+        
+        print(f'🕐 RSS Crawl başlatılıyor: {current_time.strftime("%Y-%m-%d %H:%M:%S %Z")}')
+        
+        sys.path.append(os.getcwd())
+        from app.services.scheduler import scheduler_service
+        from app.core.database import db_manager
+        
+        async def run_crawl():
+            try:
+                print('📚 RSS tarama başlatılıyor...')
+                db_manager.init_database()
+                await scheduler_service.crawl_and_process_news()
+                print('✅ RSS tarama tamamlandı')
+            except Exception as e:
+                print(f'❌ RSS tarama hatası: {e}')
+                sys.exit(1)
+        
+        asyncio.run(run_crawl())
+        "
+    
+    - name: Run Digest Send
+      if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'digest' || github.event.inputs.job_type == 'both'))
+      env:
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+        FROM_NAME: ${{ secrets.FROM_NAME }}
+        DATABASE_TYPE: postgresql
+        DAILY_CRAWL_HOUR: 8
+        DAILY_CRAWL_MINUTE: 0
+        DAILY_DIGEST_HOUR: 8
+        DAILY_DIGEST_MINUTE: 10
+      run: |
+        cd backend
+        python -c "
+        import asyncio
+        import sys
+        import os
+        from datetime import datetime
+        import pytz
+        
+        # Türkiye saati
+        tz = pytz.timezone('Europe/Istanbul')
+        current_time = datetime.now(tz)
+        
+        print(f'📧 Digest Send başlatılıyor: {current_time.strftime("%Y-%m-%d %H:%M:%S %Z")}')
+        
+        sys.path.append(os.getcwd())
+        from app.services.scheduler import scheduler_service
+        from app.core.database import db_manager
+        
+        async def run_digest():
+            try:
+                print('📧 Digest gönderimi başlatılıyor...')
+                db_manager.init_database()
+                await scheduler_service.send_daily_digests()
+                print('✅ Digest gönderimi tamamlandı')
+            except Exception as e:
+                print(f'❌ Digest gönderim hatası: {e}')
+                sys.exit(1)
+        
+        asyncio.run(run_digest())
+        "
+    
+    - name: Test Results
+      if: always()
+      run: |
+        echo "🎯 Test tamamlandı!"
+        echo "📊 Job Type: ${{ github.event.inputs.job_type || 'scheduled' }}"
+        echo "🕐 Test Zamanı: $(date)"
+        echo "🌍 Timezone: Europe/Istanbul" 

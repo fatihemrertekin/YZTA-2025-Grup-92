@@ -27,6 +27,7 @@ on:
 jobs:
   scheduler:
     runs-on: ubuntu-latest
+    environment: Production
     
     steps:
     - name: Checkout code

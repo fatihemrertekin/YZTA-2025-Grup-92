@@ -13,444 +13,172 @@ Enes KIRAÇ (Pasif Üye)
 
 Emine ÇAKAR (Pasif Üye)
 
-# TrendLetter - AI-Powered Tech Newsletter & Learning Platform
-## Product Requirements Document (PRD)
+# TechNews – Yapay Zekâ Destekli Teknoloji Bülteni ve Mikro-Öğrenme Platformu
+
+> **Yapay Zekâ Teknoloji Akademisi 2025 | Grup 92 Bootcamp Projesi**  
+> **Takım Adı:** Yenilikçiler  
+> **Geliştirme Süresi:** 4–6 hafta  
+> **Teknolojiler:** React, FastAPI, Gemini AI, PostgreSQL, Redis, SendGrid
 
 ---
 
-## 1. Executive Summary
+## Proje Tanımı
 
-**Product Name:** InsightAI
-**Product Type:** AI-driven newsletter and micro-learning platform
-**Target Launch:** Bootcamp project timeline (4-6 weeks)
+**TechNews**, bilgi karmaşasının yoğun yaşandığı teknoloji dünyasında çalışan yazılım geliştiriciler, teknik liderler ve ürün yöneticileri için özel olarak tasarlanmış, yapay zekâ destekli bir **akıllı bülten ve mikro-öğrenme** platformudur.
 
-**Vision:** Eliminate technology overwhelm for developers and tech professionals by delivering curated, AI-analyzed tech developments with actionable learning paths.
-
-**Mission:** Transform information noise into focused insights and practical skills through automated research, intelligent curation, and micro-learning experiences.
+Proje; haberleri sadece aktaran değil, **analiz eden**, **öğreten** ve **kişiye özel sunan** bir sistem olarak konumlanır. AI modelleriyle içerikler puanlanır, özetlenir, eğilimlerine göre değerlendirilir ve kullanıcının ilgi alanlarına göre haftalık olarak sunulur. Ek olarak, bu içeriklerden yola çıkarak oluşturulan **5–15 dakikalık mikro-kurslar**, profesyonellerin yeni teknolojileri hızlıca öğrenmesini sağlar.
 
 ---
 
-## 2. Problem Statement
+## Vizyon & Misyon
 
-### Primary Pain Points
-- **Information Overload:** Tech professionals struggle to keep up with rapid technological changes
-- **FOMO Anxiety:** Fear of missing critical developments or falling behind
-- **Time Scarcity:** Limited time to research and understand new technologies
-- **Signal vs Noise:** Difficulty distinguishing hype from genuinely important developments
-- **Learning Gap:** Awareness of new tech but lack of practical implementation knowledge
+### Vizyonumuz
 
-### Market Gap
-Current tech newsletters focus on entertainment/broad coverage rather than targeted professional development and practical application.
+Geliştiricilerin ve teknoloji profesyonellerinin, bilgiye boğulmadan doğru içeriğe, doğru formatta ve doğru zamanda erişebildiği; öğrenmeyi ve karar vermeyi kolaylaştıran akıllı bir içerik platformu olmak.
+
+### Misyonumuz
+
+Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıların bilgi kirliliğinden uzak, sade, anlamlı ve uygulanabilir teknoloji bilgilerine ulaşmasını sağlamak. Kullanıcıların sadece bilgiye ulaşmasını değil, onu anlamasını ve pratiğe dökmesini desteklemek.
 
 ---
 
-## 3. Target Audience
+## Öne Çıkan Özellikler
 
-### Primary Users
-- **Developers** (Frontend, Backend, Full-stack)
-- **Tech Entrepreneurs** and startup founders
-- **Product Managers** in tech companies
-- **CTOs** and technical leads
-
-### Secondary Users (Future Expansion)
-- Legal professionals (LegalTech)
-- Healthcare professionals (HealthTech)
-- Finance professionals (FinTech)
-
-### User Personas
-
-**Persona 1: "Busy Developer"**
-- 3-7 years experience
-- Works at startup/scale-up
-- Wants to stay current but lacks time
-- Values practical, actionable content
-
-**Persona 2: "Tech Leader"**
-- 7+ years experience
-- Makes technology decisions
-- Needs strategic insights
-- Focuses on business impact
+| Özellik                    | Açıklama |
+|----------------------------|----------|
+| AI destekli araştırma   | Trend analizleri, sosyal sinyal kontrolü, içerik puanlama |
+| Akıllı bülten            | Haftalık olarak ilgi alanına göre kürate edilmiş içerik |
+| Mikro-öğrenme modülleri | 5–15 dakikalık, kod içeren, pratik odaklı mini kurslar |
+| Sesli içerik desteği    | Gemini AI ile doğal sesli anlatım (TTS) |
+| Kişiselleştirme         | İlgi alanı, teslimat sıklığı, içerik derinliği tercihleri |
+| İçerik öneri motoru     | Okuma alışkanlığına göre yeni kurs/bülten önerisi |
+| Mobil uyumlu arayüz     | React tabanlı responsive tasarım, PWA uyumluluğu |
 
 ---
 
-## 4. Product Goals & Success Metrics
+## Kullanıcı Profilleri
 
-### Primary Goals
-1. **Reduce Information Anxiety:** Help users feel confident they're not missing critical developments
-2. **Accelerate Learning:** Enable rapid understanding and application of new technologies
-3. **Improve Decision Making:** Provide context for technology adoption decisions
+### Persona 1 – “Yoğun Geliştirici”
+- 3–7 yıl deneyimli, startup’ta çalışıyor
+- Trendleri takip etmek istiyor ama vakti kısıtlı
+- Pratik, özet ve doğrudan uygulanabilir içerik arıyor
 
-### Success Metrics
-- **Engagement:** >40% weekly newsletter open rate
-- **Retention:** >60% users active after 4 weeks
-- **Learning:** >30% users complete micro-courses
-- **Conversion:** >15% freemium to premium conversion
-- **Satisfaction:** >4.5/5 user rating
+### Persona 2 – “Teknoloji Lideri”
+- 7+ yıl deneyimli, teknik karar verici
+- Stratejik içgörüler peşinde
+- Teknoloji seçimlerini iş etkisine göre değerlendirmek istiyor
 
 ---
 
-## 5. Core Features
+## Ürün Hedefleri ve Başarı Metrikleri
 
-### 5.1 Newsletter System
+### Ana Hedefler
+1. **Bilgi Kaygısını Azaltmak** – Kullanıcının önemli gelişmeleri kaçırmadığına dair güven vermek  
+2. **Hızlı Öğrenme Sunmak** – Yeni teknolojileri kısa sürede uygulamaya dökebilecek yetkinliği kazandırmak  
+3. **Karar Destek Sistemi Sağlamak** – Teknoloji seçimini kolaylaştırmak, bağlamsal bilgi sunmak
 
-**Smart Research Engine**
-- Multi-source content aggregation
-- Two-stage research pipeline
-- Automated trend analysis
-- Source credibility scoring
-
-**AI-Powered Curation**
-- Importance scoring algorithm
-- Hype vs substance analysis
-- Content summarization
-- Trend momentum tracking
-
-**Personalized Delivery**
-- Interest-based filtering
-- Frequency preferences
-- Content format options
-- Mobile-optimized design
-
-### 5.2 Micro-Learning Platform
-
-**Dynamic Course Generation**
-- AI-generated practical courses
-- Real-world implementation examples
-- Progressive skill building
-- Interactive elements
-
-**Content Structure**
-- 5-10 minute learning modules
-- Hands-on exercises
-- Code examples and tutorials
-- Resource links and references
-
-### 5.3 Interest Management
-
-**Customizable Topics**
-- AI/Machine Learning
-- Web Development
-- DevOps/Infrastructure
-- Mobile Development
-- Blockchain/Web3
-- Cloud Computing
-- Cybersecurity
-
-**Granular Control**
-- Topic prioritization
-- Content depth preferences
-- Delivery scheduling
-- Notification settings
+### Başarı Kriterleri (KPIs)
+- Bülten açılma oranı > %40  
+- Kurs tamamlama oranı > %30  
+- 4 hafta aktif kullanıcı oranı > %60  
+- Ücretsiz → Premium dönüşüm oranı > %15  
+- Kullanıcı memnuniyeti > 4.5 / 5
 
 ---
 
-## 6. Technical Architecture
+## Kullanılan Teknolojiler
 
-### 6.1 Data Collection Pipeline
-
-**Stage 1: Reliable Sources**
-- RSS feed aggregation
-- API integrations (GitHub, dev blogs)
-- Web scraping (TechCrunch, Ars Technica, The Verge)
-- Documentation sites monitoring
-
-**Stage 2: Social Validation**
-- Twitter/X API integration
-- Reddit API for community sentiment
-- HackerNews API
-- GitHub trending repositories
-
-### 6.2 AI Processing Layer
-
-**Content Analysis**
-- Natural language processing
-- Sentiment analysis
-- Trend momentum calculation
-- Importance scoring
-
-**Content Generation**
-- Newsletter summarization
-- Micro-course creation
-- Title and description generation
-- Tagging and categorization
-
-### 6.3 Delivery System
-
-**Email Infrastructure**
-- Automated newsletter generation
-- Template management
-- Personalization engine
-- Delivery scheduling
-
-**Web Application**
-- User dashboard
-- Course management
-- Progress tracking
-- Archive system
+| Katman       | Teknoloji                    |
+|--------------|------------------------------|
+| Frontend     | React (Next.js)              |
+| Backend      | Python (FastAPI)             |
+| Veritabanı   | PostgreSQL                   |
+| Ön Bellek    | Redis                        |
+| Görev Kuyruğu| Celery                       |
+| Yapay Zekâ   | Gemini AI, OpenAI, NLP       |
+| E-posta      | SendGrid                     |
+| Hosting      | AWS / GCP                    |
 
 ---
 
-## 7. User Experience Flow
+## Temel Sistem Bileşenleri
 
-### 7.1 Onboarding
-1. **Registration:** Email signup with basic info
-2. **Interest Selection:** Choose 3-5 technology areas
-3. **Preference Setting:** Frequency, format, depth preferences
-4. **Welcome Newsletter:** Sample content delivery
-5. **First Course:** Guided micro-learning experience
-
-### 7.2 Core Usage Loop
-1. **Newsletter Delivery:** Weekly curated content
-2. **Content Consumption:** Read summaries and insights
-3. **Deep Dive:** Access micro-courses for interesting topics
-4. **Skill Application:** Complete hands-on exercises
-5. **Feedback Loop:** Rate content and adjust preferences
-
-### 7.3 Premium Upgrade Path
-1. **Freemium Limits:** 3 interest areas, basic courses
-2. **Premium Features:** Unlimited areas, advanced courses
-3. **Upgrade Triggers:** Limit notifications, premium content previews
-4. **Conversion Flow:** Seamless upgrade process
+- **Veri Toplama:** RSS, GitHub API, HackerNews, Reddit, TechCrunch scraping  
+- **AI Katmanı:** Özetleme, puanlama, eğilim analizi, kurs üretimi  
+- **Teslimat:** Haftalık e-posta, kullanıcı paneli, mikro-kurs sayfaları  
+- **Kullanıcı Arayüzü:** İlgi alanı seçimi, bildirim ayarları, kurs ilerlemesi takibi
 
 ---
 
-## 8. Content Strategy
+## Kullanıcı Akışı
 
-### 8.1 Newsletter Content Structure
-
-**Weekly Format:**
-- **Executive Summary:** Top 3 developments
-- **Deep Dive:** 1-2 major topics with analysis
-- **Quick Updates:** 5-7 brief items
-- **Learning Opportunities:** Related micro-courses
-- **Community Picks:** Social media highlights
-
-**Content Categories:**
-- **Breaking News:** Major releases and announcements
-- **Trend Analysis:** Market movements and adoption patterns
-- **Tool Reviews:** New developer tools and platforms
-- **Tutorial Highlights:** Learning resources and guides
-- **Community Insights:** Developer discussions and opinions
-
-### 8.2 Micro-Course Content
-
-**Course Types:**
-- **Quick Start:** 5-minute tool introductions
-- **Implementation:** 10-minute practical guides
-- **Deep Dive:** 15-minute comprehensive overviews
-- **Case Study:** Real-world application examples
-
-**Content Elements:**
-- **Problem Context:** Why this matters
-- **Solution Overview:** What this technology does
-- **Implementation Guide:** How to use it
-- **Best Practices:** Professional tips
-- **Further Resources:** Extended learning paths
+1. **Kayıt:** E-posta ile basit kayıt
+2. **Kişiselleştirme:** İlgi alanı ve teslimat tercihi seçimi
+3. **İlk Deneyim:** Hoş geldin bülteni + örnek mikro kurs
+4. **Düzenli Kullanım:** Haftalık bülten okuma, kurs tamamlama
+5. **Premium Geçiş:** Yeni içerik, gelişmiş kurslara erişim
 
 ---
 
-## 9. Monetization Strategy
+## Gelir Modeli
 
-### 9.1 Freemium Model
+### Ücretsiz Paket:
+- Haftalık bülten
+- 3 ilgi alanı
+- Temel kurslara erişim
 
-**Free Tier:**
-- Weekly newsletter
-- 3 interest areas
-- Basic micro-courses
-- Community access
-
-**Premium Tier ($9.99/month):**
-- Daily newsletter option
-- Unlimited interest areas
-- Advanced micro-courses
-- Priority support
-- Archive access
-- Custom alerts
-
-### 9.2 Revenue Projections
-
-**Bootstrap Targets:**
-- Month 1: 100 users (validation)
-- Month 3: 500 users (product-market fit)
-- Month 6: 2,000 users (scaling)
-- Month 12: 10,000 users (15% premium = $1,500 MRR)
+### Premium ($9.99 / ay):
+- Günlük bülten  
+- Sınırsız konu ve içerik  
+- Gelişmiş mikro kurslar  
+- Arşiv ve kişisel öneri motoru  
+- Sesli içerik önceliği, destek
 
 ---
 
-## 10. Technical Implementation
+## Yol Haritası
 
-### 10.1 MVP Tech Stack
+### Phase 1 – MVP (Sprint1)
+- [x] AI destekli içerik özetleme
+- [x] FastAPI ile veri çekme
+- [x] Temel bülten motoru
+- [x] Kayıt ve tercih ekranı
 
-**Backend:**
-- Node.js/Express or Python/FastAPI
-- PostgreSQL database
-- Redis for caching
-- Bull/Celery for job queues
+### Phase 2 – Geliştirme (Sprint2)
+- [x] Mikro kurs üretimi
+- [x] TTS ile sesli anlatım
+- [x] Arayüz tasarımı
+- [x] Bülten kişiselleştirme
 
-**AI/ML:**
-- OpenAI API for content generation
-- Custom NLP models for analysis
-- Sentiment analysis APIs
-- Web scraping frameworks
-
-**Frontend:**
-- React/Next.js web app
-- Responsive design
-- Email templates (MJML)
-- Analytics integration
-
-**Infrastructure:**
-- Cloud hosting (AWS/GCP)
-- CDN for static assets
-- Email service (SendGrid)
-- Monitoring and logging
-
-### 10.2 Data Architecture
-
-**Content Database:**
-- Articles and sources
-- User preferences
-- Engagement metrics
-- Course progress
-
-**Analytics Pipeline:**
-- User behavior tracking
-- Content performance metrics
-- A/B testing infrastructure
-- Feedback collection
+### Phase 3 – Ölçekleme (Sprint3)
+- [ ] Mobil uygulama / PWA
+- [ ] Geliştirici API’leri
+- [ ] Genişletilmiş dikeyler (FinTech, LegalTech vs.)
+- [ ] Topluluk sistemi
 
 ---
 
-## 11. Risk Assessment
+## Risk Analizi
 
-### 11.1 Technical Risks
-
-**AI Content Quality**
-- Risk: Generated content may be inaccurate
-- Mitigation: Source citation, confidence scoring, user feedback
-
-**API Dependencies**
-- Risk: Third-party API limitations
-- Mitigation: Multiple data sources, rate limiting, fallback systems
-
-**Scale Challenges**
-- Risk: Performance issues with user growth
-- Mitigation: Scalable architecture, monitoring, gradual rollout
-
-### 11.2 Business Risks
-
-**Market Competition**
-- Risk: Existing players with more resources
-- Mitigation: Focus on specific niche, superior UX, AI differentiation
-
-**User Retention**
-- Risk: Newsletter fatigue, low engagement
-- Mitigation: Personalization, value-focused content, feedback loops
-
-**Monetization Challenges**
-- Risk: Low conversion to premium
-- Mitigation: Clear value proposition, graduated features, user research
+| Risk                     | Önlem                          |
+|--------------------------|--------------------------------|
+| AI içeriği hatalı olabilir | Kaynak gösterimi, kullanıcı geri bildirimi |
+| API bağımlılıkları       | Çoklu kaynak, fallback sistemler |
+| Performans sorunları     | Ölçeklenebilir mimari, önbellekleme |
+| Kullanıcı terk oranı     | Kişiselleştirme, değer temelli içerik |
 
 ---
 
-## 12. Success Criteria & KPIs
+## Kurulum ve Geliştirme
 
-### 12.1 Product Metrics
+#bash
+git clone https://github.com/YZTA-2025-Grup-92/technews.git
+cd technews
+pip install -r requirements.txt
+npm install
+npm run dev
 
-**Engagement:**
-- Newsletter open rate: >40%
-- Click-through rate: >15%
-- Course completion rate: >30%
-- Time spent on platform: >10 min/week
 
-**Growth:**
-- Weekly new user acquisition: >50
-- User retention (4-week): >60%
-- Premium conversion rate: >15%
-- Net Promoter Score: >50
-
-**Content Quality:**
-- User content ratings: >4.0/5
-- Source accuracy: >95%
-- Relevance score: >4.2/5
-- Freshness index: <24 hours
-
-### 12.2 Business Metrics
-
-**Revenue:**
-- Monthly recurring revenue growth: >20%
-- Customer acquisition cost: <$15
-- Lifetime value: >$100
-- Churn rate: <5% monthly
-
----
-
-## 13. Roadmap & Milestones
-
-### 13.1 Phase 1: MVP (Weeks 1-4)
-- [ ] Basic research pipeline
-- [ ] AI content generation
-- [ ] Newsletter delivery system
-- [ ] Simple web interface
-- [ ] User registration and preferences
-
-### 13.2 Phase 2: Enhancement (Weeks 5-8)
-- [ ] Micro-course platform
-- [ ] Advanced personalization
-- [ ] Social media integration
-- [ ] Premium features
-- [ ] Analytics dashboard
-
-### 13.3 Phase 3: Scale (Weeks 9-12)
-- [ ] Mobile app
-- [ ] API for developers
-- [ ] Enterprise features
-- [ ] Additional verticals
-- [ ] Community features
-
----
-
-## 14. Appendix
-
-### 14.1 Competitive Analysis
-
-**Direct Competitors:**
-- Morning Brew (Tech): Broad audience, entertainment focus
-- TechCrunch Newsletter: News-heavy, less analysis
-- Hacker Newsletter: Community-driven, weekly frequency
-
-**Indirect Competitors:**
-- Twitter/X: Real-time but noisy
-- Reddit: Community insights but unfiltered
-- Traditional tech blogs: Deep but time-consuming
-
-**Competitive Advantages:**
-- AI-powered curation and analysis
-- Practical learning integration
-- Professional focus over entertainment
-- Personalized content delivery
-
-### 14.2 Technical Specifications
-
-**API Requirements:**
-- RESTful API design
-- Rate limiting (100 requests/hour)
-- Authentication (JWT tokens)
-- Data validation and sanitization
-
-**Performance Requirements:**
-- Newsletter generation: <5 minutes
-- Page load time: <2 seconds
-- Email delivery: <1 hour
-- Course generation: <10 minutes
-
-**Security Requirements:**
-- Data encryption (at rest and in transit)
-- GDPR compliance
-- User data protection
-- Secure API endpoints
-
----
 
 Sprint 1 Report
 

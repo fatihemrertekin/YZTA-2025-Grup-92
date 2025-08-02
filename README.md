@@ -5,13 +5,13 @@ Takım adı: Yenilikçiler
 Takım üyeleri:
 Furkan ÖZTÜRK (Scrum Master)
 
-Enes KIRAÇ (Developer)
-
 Fatih Emre ERTEKİN (Developer)
 
 Kübra ÖZCAN (Developer)
 
-Emine ÇAKAR (Developer)
+Enes KIRAÇ (Pasif Üye)
+
+Emine ÇAKAR (Pasif Üye)
 
 # TrendLetter - AI-Powered Tech Newsletter & Learning Platform
 ## Product Requirements Document (PRD)
@@ -569,7 +569,7 @@ The total target for Sprint 2 was set at 100 points.
 The entire project backlog consists of 300 points, distributed equally across three sprints. Sprint 2 builds upon the foundations established in Sprint 1 by introducing new modules.
 All tasks were structured to stay within the point limit and organized modularly to maintain continuity across components.
 
-<img width="2850" height="753" alt="spr2_table" src="https://github.com/user-attachments/assets/8b6eb368-c318-4e99-9361-07d543fa9f56" />
+<img width="2850" height="753" alt="spr2_table" src="https://github.com/user-attachments/assets/161f2c5c-2c74-4810-a41b-bc71c9a620cd" />
 
 
 1.3. Task Distribution and Backlog Structure
@@ -605,7 +605,7 @@ All tasks were assigned based on sprint capacity and team competency. The final 
 As in Sprint 1, Daily Scrum meetings were held regularly via Google Meet. Each team member reported their progress, blockers, and plans. Immediate feedback and problem resolution were achieved during these meetings.
 Additional communication occurred over WhatsApp, and all logs were archived via a shared Google Drive link.
 
-<img width="869" height="1228" alt="spr2" src="https://github.com/user-attachments/assets/953c9521-3d0c-418c-8c81-e3bedaaffa8a" />
+<img width="869" height="1228" alt="spr2" src="https://github.com/user-attachments/assets/e209e87e-8b70-4616-b781-f9001c0859ac" />
 
 
 Meeting Records:
@@ -642,7 +642,7 @@ In addition, feedback indicated that the initial version of the user interface s
 Sprint Review Participants:
 Furkan ÖZTÜRK, Enes KIRAÇ, Fatih Emre ERTEKİN, Kübra ÖZCAN, Emine ÇAKAR
 
-<img width="1228" height="805" alt="spr2_todo" src="https://github.com/user-attachments/assets/7d99cb19-b978-4f61-9fb2-bb2739b70a49" />
+<img width="1228" height="805" alt="spr2_todo" src="https://github.com/user-attachments/assets/9177bd3e-09e3-4531-adda-470fc7e31c99" />
 
 
 5. Sprint Retrospective
@@ -666,4 +666,5 @@ This sprint marked a major transition in the user-facing components of the Insig
 
 The micro-course creation feature in our product is not yet fully completed, while the AI-powered newsletter generation functionality is demonstrated in the images below.
 
-![ai_newsletter_yzta](readme-images/ai_newsletter_yzta.gif)
+![ai_newsletter_yzta](https://github.com/user-attachments/assets/602d515b-309a-4a03-9a22-863b8aa9ba7d)
+

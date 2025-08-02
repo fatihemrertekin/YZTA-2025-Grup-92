@@ -45,14 +45,14 @@ jobs:
     - name: Run RSS Crawl
       if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'crawl' || github.event.inputs.job_type == 'both'))
       env:
-        DATABASE_URL: ${{ secrets.DATABASE_URL || 'postgresql://tech_user:NaX5oKfmXQRVhUZjAQIGcuhJh2radSsL@dpg-d26h449r0fns73fktbh0-a.frankfurt-postgres.render.com/tech_news_db_divj' }}
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || 'AIzaSyCn-mobIqvflbvSjlhHzaPlo_cPj6bx3ZM' }}
-        SMTP_SERVER: ${{ secrets.SMTP_SERVER || 'smtp.gmail.com' }}
-        SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
-        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME || 'fatihemrertekin.74@gmail.com' }}
-        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD || 'clnc xfgd qnob hiyl' }}
-        FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
-        FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+        FROM_NAME: ${{ secrets.FROM_NAME }}
         DATABASE_TYPE: postgresql
         DAILY_CRAWL_HOUR: 4
         DAILY_CRAWL_MINUTE: 50
@@ -65,14 +65,14 @@ jobs:
     - name: Run Digest Send
       if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'digest' || github.event.inputs.job_type == 'both'))
       env:
-        DATABASE_URL: ${{ secrets.DATABASE_URL || 'postgresql://tech_user:NaX5oKfmXQRVhUZjAQIGcuhJh2radSsL@dpg-d26h449r0fns73fktbh0-a.frankfurt-postgres.render.com/tech_news_db_divj' }}
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || 'AIzaSyCn-mobIqvflbvSjlhHzaPlo_cPj6bx3ZM' }}
-        SMTP_SERVER: ${{ secrets.SMTP_SERVER || 'smtp.gmail.com' }}
-        SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
-        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME || 'fatihemrertekin.74@gmail.com' }}
-        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD || 'clnc xfgd qnob hiyl' }}
-        FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
-        FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+        FROM_NAME: ${{ secrets.FROM_NAME }}
         DATABASE_TYPE: postgresql
         DAILY_CRAWL_HOUR: 4
         DAILY_CRAWL_MINUTE: 50
@@ -85,14 +85,14 @@ jobs:
     - name: Run Both Jobs
       if: github.event_name == 'workflow_dispatch' && github.event.inputs.job_type == 'both'
       env:
-        DATABASE_URL: ${{ secrets.DATABASE_URL || 'postgresql://tech_user:NaX5oKfmXQRVhUZjAQIGcuhJh2radSsL@dpg-d26h449r0fns73fktbh0-a.frankfurt-postgres.render.com/tech_news_db_divj' }}
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || 'AIzaSyCn-mobIqvflbvSjlhHzaPlo_cPj6bx3ZM' }}
-        SMTP_SERVER: ${{ secrets.SMTP_SERVER || 'smtp.gmail.com' }}
-        SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
-        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME || 'fatihemrertekin.74@gmail.com' }}
-        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD || 'clnc xfgd qnob hiyl' }}
-        FROM_EMAIL: ${{ secrets.FROM_EMAIL || 'fatihemrertekin.74@gmail.com' }}
-        FROM_NAME: ${{ secrets.FROM_NAME || 'Tech News Digest' }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+        FROM_NAME: ${{ secrets.FROM_NAME }}
         DATABASE_TYPE: postgresql
         DAILY_CRAWL_HOUR: 4
         DAILY_CRAWL_MINUTE: 50

@@ -611,7 +611,7 @@ Additional communication occurred over WhatsApp, and all logs were archived via 
 Meeting Records:
 Sprint 2 – Daily Scrum Logs
 
-![WhatsApp Image 2025-07-21 at 17 21 23](https://github.com/user-attachments/assets/80da5f5c-a56f-41a1-b9ab-01e2e6b6c8db)
+![WhatsApp Image 2025-07-21 at 17 21 23](https://github.com/user-attachments/assets/127bd9a5-3800-4a0b-9a19-ba8aa7e4ca1b)
 
 
 3. Product Status and System Progress
@@ -631,7 +631,7 @@ The first prototype of the visual knowledge cards was developed
 
 Fetching (GET) operations with FastAPI based in our project:
 
-![WhatsApp Image 2025-07-21 at 17 22 16](https://github.com/user-attachments/assets/ab1f5662-7ba4-4aec-baa7-581f0a46788f)
+![WhatsApp Image 2025-07-21 at 17 22 16](https://github.com/user-attachments/assets/3afe59f9-a613-4d62-9d23-652e6fe7a329)
 
 
 4. Sprint Review

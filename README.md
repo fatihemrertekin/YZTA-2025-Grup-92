@@ -7,7 +7,7 @@ Furkan ÖZTÜRK (Scrum Master)
 
 Fatih Emre ERTEKİN (Developer)
 
-Kübra ÖZCAN (Developer)
+Kübra ÖZCAN (Product Owner)
 
 ~~Enes KIRAÇ~~ (Pasif Üye)
 

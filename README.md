@@ -80,7 +80,7 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 ## Proje Tanımı
 
-**TechNews**, bilgi karmaşasının yoğun yaşandığı teknoloji dünyasında çalışan yazılım geliştiriciler, teknik liderler ve ürün yöneticileri için özel olarak tasarlanmış, teknolojide güncel kalmak için oluşturulmuş bir akıllı bülten platformudur.
+**TechNews**, bilgi karmaşasının yoğun yaşandığı teknoloji dünyasında çalışan genel olarak teknolojiyle ilgilenen herkes için, özel olarak yazılım geliştiriciler, teknik liderler ve ürün yöneticileri için tasarlanmış, teknolojide güncel kalmak için oluşturulmuş bir akıllı bülten platformudur.
 
 Proje; haberleri sadece aktaran değil, **analiz eden**, **öğreten** ve **kişiye özel sunan** bir sistem olarak konumlanır. AI modelleriyle içerikler puanlanır, özetlenir, eğilimlerine göre değerlendirilir ve kullanıcının ilgi alanlarına göre günlük ve haftalık olarak bülten maili kişiye gönderilir. Ek olarak, halihazırda geliştirilmekte olan projeler bu içeriklerden yola çıkarak, profesyonellerin yeni teknolojileri hızlıca öğrenip entegre edebilmesini sağlar.
 
@@ -202,10 +202,10 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 - [x] Bülten kişiselleştirme
 
 ### Phase 3 – Ölçekleme (Sprint3)
-- [ ] Web uygulama
-- [ ] Geliştirici API’leri
-- [ ] Abonelik sistemi
-- [ ] Mail gönderimi
+- [x] Web uygulama
+- [x] Geliştirici API’leri
+- [x] Abonelik sistemi
+- [x] Mail gönderimi
 
 ---
 

@@ -298,7 +298,10 @@ Sprint 2 öncesinde tüm kullanıcı hikayeleri alt görevleriyle birlikte backl
 - Kişiye özel bülten öneri motoru entegre edildi  
 - Görsel bilgi kartları geliştirildi
 
-![WhatsApp Image 2025-07-21 at 17 22 16](https://github.com/user-attachments/assets/3afe59f9-a613-4d62-9d23-652e6fe7a329)
+![WhatsApp Image 2025-08-03 at 19 24 20](https://github.com/user-attachments/assets/f4f587d4-eaf0-4725-a81e-fb7662f7bba5)
+
+![WhatsApp Image 2025-08-03 at 19 24 22](https://github.com/user-attachments/assets/93da0d7a-dfe8-4786-88fc-13df16273175)
+
 
 ---
 

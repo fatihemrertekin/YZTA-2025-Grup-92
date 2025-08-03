@@ -74,7 +74,7 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 @**Uygulama URL'si:** [TechNews Canlı Uygulama URL'si ](https://yzta-2025-grup-92.vercel.app/#)
 
-@**Uygulama Admin URL'si:** [TechNews Admin URL'si ] (https://yzta-2025-grup-92.vercel.app/#/admin).
+@**Uygulama Admin URL'si:** [TechNews Admin URL'si ](https://yzta-2025-grup-92.vercel.app/#/admin)
 
 
 

@@ -13,7 +13,7 @@
 
 </p>
 
-# Takım Adı: 
+# Takım Adı ve Logosu: 
 
 ## YENİLİKÇİLER
 <p align="center">

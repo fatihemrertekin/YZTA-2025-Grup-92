@@ -13,6 +13,9 @@ Kübra ÖZCAN (Product Owner)
 
 ~~Emine ÇAKAR~~ (Pasif Üye)
 
+(Pasif üyeler mazeretleri nedeniyle hiçbir katkıda bulunmadıkları için pasif üye olmayı kabul etmişlerdir.)
+
+
 # TechNews – Yapay Zekâ Destekli Eğitici Teknoloji Bülteni Platformu
 
 > **Yapay Zekâ Teknoloji Akademisi 2025 | Grup 92 Bootcamp Projesi**  

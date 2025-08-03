@@ -59,7 +59,7 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 ~~Emine ÇAKAR~~ (Pasif Üye)
 
-(Pasif üyeler mazeretleri nedeniyle hiçbir katkıda bulunmadıkları için pasif üye olmayı kabul etmişlerdir.)
+(Pasif üyeler mazeretleri nedeniyle proje fikri ve takım adı bulma aşaması hariç projenin hiçbir aşamasına katkıda bulunmadıkları için pasif üye olmayı kabul etmişlerdir.)
 
 ---
 

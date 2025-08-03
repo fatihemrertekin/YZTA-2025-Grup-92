@@ -26,7 +26,7 @@ Kübra ÖZCAN (Developer)
 
 **TechNews**, bilgi karmaşasının yoğun yaşandığı teknoloji dünyasında çalışan yazılım geliştiriciler, teknik liderler ve ürün yöneticileri için özel olarak tasarlanmış, yapay zekâ destekli bir **akıllı bülten ve teknolojide güncel kalma** platformudur.
 
-Proje; haberleri sadece aktaran değil, **analiz eden**, **öğreten** ve **kişiye özel sunan** bir sistem olarak konumlanır. AI modelleriyle içerikler puanlanır, özetlenir, eğilimlerine göre değerlendirilir ve kullanıcının ilgi alanlarına göre günlük, haftalık olarak bülten maili kişiye gönderilir. Ek olarak, halihazırda geliştirilmekte olan projeler bu içeriklerden yola çıkarak, profesyonellerin yeni teknolojileri hızlıca öğrenip entegre edebilmesini sağlar.
+Proje; haberleri sadece aktaran değil, **analiz eden**, **öğreten** ve **kişiye özel sunan** bir sistem olarak konumlanır. AI modelleriyle içerikler puanlanır, özetlenir, eğilimlerine göre değerlendirilir ve kullanıcının ilgi alanlarına göre günlük ve haftalık olarak bülten maili kişiye gönderilir. Ek olarak, halihazırda geliştirilmekte olan projeler bu içeriklerden yola çıkarak, profesyonellerin yeni teknolojileri hızlıca öğrenip entegre edebilmesini sağlar.
 
 ---
 
@@ -47,7 +47,7 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 | Özellik                    | Açıklama |
 |----------------------------|----------|
 | AI destekli araştırma   | Trend analizleri, sosyal sinyal kontrolü, içerik puanlama |
-| Akıllı bülten            | Haftalık olarak ilgi alanına göre kürate edilmiş içerik |
+| Akıllı bülten            | Günlük ve haftalık olarak ilgi alanına göre kürate edilmiş içerik |
 | Kişiselleştirme         | İlgi alanı, teslimat sıklığı, içerik derinliği tercihleri |
 | İçerik öneri motoru     | Okuma alışkanlığına göre yeni kurs/bülten önerisi |
 | Web uyumlu arayüz     | React tabanlı responsive tasarım, PWA uyumluluğu |
@@ -102,7 +102,7 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 
 - **Veri Toplama:** RSS, GitHub API, TechVerge, TechCrunch scraping  
 - **AI Katmanı:** Özetleme, puanlama, eğilim analizi, bülten yönetimi  
-- **Teslimat:** Haftalık e-posta, kullanıcı paneli, bülten ve arşiv sayfaları  
+- **Teslimat:** Günlük ve haftalık e-posta, kullanıcı paneli, bülten ve arşiv sayfaları  
 - **Kullanıcı Arayüzü:** İlgi alanı seçimi, bildirim ayarları, bülten ilerlemesi takibi
 
 ---
@@ -112,7 +112,7 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 1. **Kayıt:** E-posta ile basit kayıt
 2. **Kişiselleştirme:** İlgi alanı ve teslimat tercihi seçimi
 3. **İlk Deneyim:** Hoş geldin bülteni + örnek mikro kurs
-4. **Düzenli Kullanım:** Haftalık bülten okuma, kurs tamamlama
+4. **Düzenli Kullanım:** Günlük ve haftalık bülten okuma, kurs tamamlama
 5. **Premium Geçiş:** Yeni içerik, gelişmiş kurslara erişim
 
 ---

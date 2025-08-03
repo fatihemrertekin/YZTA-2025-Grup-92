@@ -2,7 +2,8 @@
 
 <p align="center">
   
-<img width="444" height="321" alt="takım_logo" src="https://github.com/user-attachments/assets/247ae844-faa3-4da3-8ba7-e02dbf64dcea" />
+<img width="173" height="47" alt="Project_logo" src="https://github.com/user-attachments/assets/6f46ad7d-01aa-4f83-8cbc-9f6da89378ad" />
+
 
 </p>
 

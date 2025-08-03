@@ -101,6 +101,10 @@ Geliştiricilerin ve teknoloji profesyonellerinin, bilgiye boğulmadan doğru i�
 
 Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıların bilgi kirliliğinden uzak, sade, anlamlı ve uygulanabilir teknoloji bilgilerine ulaşmasını sağlamak. Kullanıcıların sadece bilgiye ulaşmasını değil, onu anlamasını ve pratiğe dökmesini desteklemek.
 
+
+![WhatsApp Image 2025-08-03 at 19 32 17](https://github.com/user-attachments/assets/2cb69652-743c-4a85-b9b5-ef0165b40d25)
+
+
 ---
 
 ## Öne Çıkan Özellikler
@@ -133,6 +137,11 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 - Teknoloji seçimlerini iş etkisine göre değerlendirmek istiyor
 
 ---
+
+
+![WhatsApp Image 2025-08-03 at 19 32 15](https://github.com/user-attachments/assets/4fd50aa9-0417-4a17-9df1-51099b2438fb)
+
+
 
 ## Ürün Hedefleri ve Başarı Metrikleri
 
@@ -221,7 +230,13 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 - [x] Abonelik sistemi
 - [x] Mail gönderimi
 
+
+
+![WhatsApp Image 2025-08-03 at 19 32 35 (2)](https://github.com/user-attachments/assets/ee0e4da0-f3ce-4545-a681-514c66218601)
+
+
 ---
+
 
 ## Risk Analizi
 
@@ -470,6 +485,18 @@ Bu sprint, kullanıcıya dönük sistemin olgunlaşmasında önemli bir geçiş 
 - TechNews’in daha fazla kullanıcıya ulaşması ve sosyal mecralarda görünürlüğü için sosyal medya hesabı açılmıştır.  
 - İlk tanıtım içerikleri yayınlanarak erken kullanıcı kazanımı hedeflenmiştir.
 
+![WhatsApp Image 2025-08-03 at 19 32 18](https://github.com/user-attachments/assets/0ce74638-1206-495a-9c68-eddfdb066d9b)
+
+
+
+![WhatsApp Image 2025-08-03 at 19 32 35 (1)](https://github.com/user-attachments/assets/a6f72234-2210-41f2-ab2b-0d9142d4bd69)
+
+
+
+![WhatsApp Image 2025-08-03 at 19 32 15 (2)](https://github.com/user-attachments/assets/bdd7382e-132f-47b2-8181-9e9588c44ffd)
+
+
+
 ---
 
 ## Sprint İçinde Tamamlanması Beklenen Puan
@@ -512,7 +539,11 @@ Hedeflenen tüm görevler başarıyla tamamlandı ve sprint planına %100 uyum s
 - Yatırımcılara sunulmak üzere ürün sunumu, demo ve teknik dokümantasyon oluşturulması.  
 - Kullanıcı verilerinin daha iyi analiz edilmesi için ileri düzey metrik ve takip sistemlerinin entegre edilmesi.
 
-  Bu sprint ile birlikte TechNews, fikir aşamasından çıkarak işlevsel, kullanıcıya hazır bir dijital ürün haline gelmiştir.  
-  Temel hedefimiz olan öğrenmeyi kolaylaştırmak, son gelişmeleri hızlı takip etmek ve içerik karmaşasını sadeleştirerek kullanıcıya rehberlik etmek başarılı şekilde uygulamaya yansıtılmıştır.  
-  Kapsamlı yardım seçenekleri, kullanıcı arayüzündeki sadeleşme ve güçlü arka plan mimarisi, TechNews’in ileriye dönük gelişimi ve sürdürülebilirliği için sağlam bir temel oluşturmuştur.
+
+![WhatsApp Image 2025-08-03 at 19 32 15](https://github.com/user-attachments/assets/4c562205-9084-4704-977c-3af4e3318f84)
+
+
+Bu sprint ile birlikte TechNews, fikir aşamasından çıkarak işlevsel, kullanıcıya hazır bir dijital ürün haline gelmiştir.  
+Temel hedefimiz olan öğrenmeyi kolaylaştırmak, son gelişmeleri hızlı takip etmek ve içerik karmaşasını sadeleştirerek kullanıcıya rehberlik etmek başarılı şekilde uygulamaya yansıtılmıştır.  
+Kapsamlı yardım seçenekleri, kullanıcı arayüzündeki sadeleşme ve güçlü arka plan mimarisi, TechNews’in ileriye dönük gelişimi ve sürdürülebilirliği için sağlam bir temel oluşturmuştur.
 

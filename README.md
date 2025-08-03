@@ -404,3 +404,85 @@ Sprint 2 öncesinde tüm kullanıcı hikayeleri alt görevleriyle birlikte backl
 
 Bu sprint, kullanıcıya dönük sistemin olgunlaşmasında önemli bir geçiş noktası olmuştur. AI altyapısı daha hassas hale gelirken, daha doğal çıktı vermeye başlanmış ve içerikler daha düzenli ve öğretici biçimde sunulmuştur.
 
+## Sprint 3 Raporu
+**Sprint Süresi:** 21 Temmuz – 3 Ağustos 2025  
+**Sprint Katılımcıları:** Furkan ÖZTÜRK, Fatih Emre ERTEKİN, Kübra ÖZCAN
+
+---
+
+## Sprint Sürecinde Gerçekleştirilen Faaliyetler
+
+### Kullanıcı Arayüzünün Tamamlanması
+- Hem karanlık hem aydınlık tema seçenekleriyle kullanıcı dostu, sade ve modern bir arayüz geliştirilmiştir.  
+- Tüm sayfa geçişleri, bileşenler ve tasarım detayları tamamlanarak test edilmiştir.
+
+### Gelişmiş Filtreleme Sistemi
+- Kullanıcıların teknoloji haberlerini kategorilere göre filtreleyebilmesi sağlanmıştır.  
+- Filtreleme sistemi, performans ve kullanılabilirlik açısından optimize edilmiştir.
+
+### E-posta Gönderim Sorununun Giderilmesi
+- Günlük gönderimlerde yaşanan zamanlama ve teslimat sorunları çözülmüştür.  
+- Artık abonelere düzenli ve güncel özet içerikler sorunsuz şekilde iletilebilmektedir.
+
+### Abonelik Sistemi ve Yardım Merkezi
+- Abonelik sistemi sadeleştirilmiş, kullanıcıya açık bir şekilde “abonelikten çık” opsiyonu eklenmiştir.  
+- Kullanıcı desteği için şu destek kanalları entegre edilmiştir:  
+  - E-posta: support@technews.com  
+  - 7/24 Canlı Destek Sohbeti  
+  - Telefon: +90 (212) 555-0123  
+- Ayrıca, kullanıcıları bilgilendirmek için SSS (Sıkça Sorulan Sorular) bölümü hazırlanmıştır.
+
+### Admin Paneli ve Backend Geliştirmeleri
+- İçerik ve kullanıcı yönetimi için kapsamlı bir admin paneli oluşturulmuştur.  
+- Backend tarafında gerekli veri yapıları ve güvenlik önlemleri uygulanmıştır.
+
+### Tanıtım ve Yayılım Faaliyetleri
+- TechNews’in daha fazla kullanıcıya ulaşması ve sosyal mecralarda görünürlüğü için LinkedIn hesabı açılmıştır.  
+- İlk tanıtım içerikleri yayınlanarak erken kullanıcı kazanımı hedeflenmiştir.
+
+---
+
+## Sprint İçinde Tamamlanması Beklenen Puan
+
+**300**
+
+---
+
+## Puan Tamamlama Mantığı
+
+- Toplamda 900 puanlık bir geliştirme planı oluşturuldu.  
+- Birinci sprintte 300 puan tamamlanmıştır.  
+- İkinci sprintte 300 puan tamamlanmıştır.  
+- Üçüncü sprintte ise kalan görevlerin tamamlanması ve entegrasyon çalışmaları yapılacağından 300 puan hedefi konulmuş ve son gün ile birlikte 300 tamamlanmıştır.
+
+**Sprint:** 300 puan  
+(Bu sprintte uygulamanın genel entegrasyonu, hataların giderilmesi ve son kullanıcıya sunuma hazır hale getirilmesi amaçlandı.)  
+Hedeflenen tüm görevler başarıyla tamamlandı ve sprint planına %100 uyum sağlandı.
+
+---
+
+## Sprint Retrospektifi ve Değerlendirme
+
+### Ekip İçi İletişim ve Motivasyon
+- Herkes üzerine düşen sorumlulukları zamanında yerine getirirken, motivasyon yüksek tutuldu.  
+- Tüm ekip, Google Meet platformu üzerinden bir araya gelerek süreci değerlendirdi, başarılarını kutladı ve birlikte tanıtım videosunu izledi.
+
+### Sprint sonunda alınan kararlar:
+- Proje sonrası iletişimi sürdüreceğiz.  
+- Ekip üyeleriyle ileride farklı projelerde de iş birliği yapmaya açığız.  
+- Ürünün gelişimi için kullanıcı geri bildirimleri toplanacak ve bir sonraki sürümde dikkate alınacak.  
+- Ekibin uyumlu çalışması ve projeye olan güveni, gelecekte de iletişimde kalınacağı yönünde ortak bir karara dönüştü.
+
+---
+
+## Gelecek Hedefleri Belirlendi
+
+- Uygulamanın farklı alt kategorilerini genişleterek farklı alanlarda büyütülmesi (sağlık, havacılık, tarım).  
+- Global kullanıcıya ulaşmak için çok dilli destek ve tanıtım materyalleri hazırlanması.  
+- Yatırımcılara sunulmak üzere ürün sunumu, demo ve teknik dokümantasyon oluşturulması.  
+- Kullanıcı verilerinin daha iyi analiz edilmesi için ileri düzey metrik ve takip sistemlerinin entegre edilmesi.
+
+  Bu sprint ile birlikte TechNews, fikir aşamasından çıkarak işlevsel, kullanıcıya hazır bir dijital ürün haline gelmiştir.  
+  Temel hedefimiz olan öğrenmeyi kolaylaştırmak, son gelişmeleri hızlı takip etmek ve içerik karmaşasını sadeleştirerek kullanıcıya rehberlik etmek başarılı şekilde uygulamaya yansıtılmıştır.  
+  Kapsamlı yardım seçenekleri, kullanıcı arayüzündeki sadeleşme ve güçlü arka plan mimarisi, TechNews’in ileriye dönük gelişimi ve sürdürülebilirliği için sağlam bir temel oluşturmuştur.
+

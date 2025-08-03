@@ -200,10 +200,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
   * **🚀 Sürekli gelişen teknoloji dünyasında kariyerini güncel tutmak isteyen herkesin yol arkadaşıdır.**
 
  
-</details>
-
-<details>
-  <summary><b>TechNews Kullanıcıya Neler Sunar?</b></summary>
     
   ### Türkçe Açıklama
   **TechNews Size Neler Sunar?**
@@ -266,13 +262,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
     </tbody>
   </table>
 
-
-</details>
-
-</details>
-
-<details>
-  <summary><b>Hedef Kitle, Kullanıcı Profilleri ve Pazar Boşluğu</b></summary>
 
   ### **Hedef Kitle (Target Audience)**
 

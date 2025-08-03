@@ -76,18 +76,11 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 
 
-# TechNews – Yapay Zeka Destekli Eğitici Teknoloji Bülteni Platformu
-
-> **Yapay Zekâ Teknoloji Akademisi 2025 | Grup 92 Bootcamp Projesi**  
-> **Takım Adı:** Yenilikçiler  
-> **Geliştirme Süresi:** 4–6 hafta  
-> **Teknolojiler:** React, FastAPI, Gemini AI, PostgreSQL, Docker
-
 ---
 
 ## Proje Tanımı
 
-**TechNews**, bilgi karmaşasının yoğun yaşandığı teknoloji dünyasında çalışan yazılım geliştiriciler, teknik liderler ve ürün yöneticileri için özel olarak tasarlanmış, yapay zekâ destekli bir **akıllı bülten ve teknolojide güncel kalma** platformudur.
+**TechNews**, bilgi karmaşasının yoğun yaşandığı teknoloji dünyasında çalışan yazılım geliştiriciler, teknik liderler ve ürün yöneticileri için özel olarak tasarlanmış, teknolojide güncel kalmak için oluşturulmuş bir akıllı bülten platformudur.
 
 Proje; haberleri sadece aktaran değil, **analiz eden**, **öğreten** ve **kişiye özel sunan** bir sistem olarak konumlanır. AI modelleriyle içerikler puanlanır, özetlenir, eğilimlerine göre değerlendirilir ve kullanıcının ilgi alanlarına göre günlük ve haftalık olarak bülten maili kişiye gönderilir. Ek olarak, halihazırda geliştirilmekte olan projeler bu içeriklerden yola çıkarak, profesyonellerin yeni teknolojileri hızlıca öğrenip entegre edebilmesini sağlar.
 

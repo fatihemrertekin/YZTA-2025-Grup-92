@@ -196,7 +196,7 @@ Puanlama, görev zorlukları ve süre tahminlerine göre tüm ekip üyelerinin k
 Sprint 1’de odaklanılan görevler:
 - Yapay zekâ modelinin ilk sürümünün eğitimi ve testleri  
 - RSS ve haber kaynaklarından veri çekimi için API entegrasyonu  
-- Mikro kurs içerik şablonlarının ve bülten prototipinin hazırlanması  
+- Bülten içerik şablonlarının ve bülten prototipinin hazırlanması  
 - TTS modülü araştırmaları  
 - E-posta şablonu taslakları
 

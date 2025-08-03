@@ -562,3 +562,5 @@ Bizi LinkedIn üzerinden takip edin
 Follow us on LinkedIn:
 https://www.linkedin.com/company/technews-app/
 
+Tanıtım videomuz:
+https://www.youtube.com/watch?v=DMGLWPlT0GE

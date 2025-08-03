@@ -19,7 +19,6 @@
 <p align="center">
  <img width="444" height="321" alt="takım_logo" src="https://github.com/user-attachments/assets/5e84a9a8-dc89-46d8-8682-053e1ab4d5a0" />
 </p>
----
 
 ## Takım Üyeleri
 
@@ -36,7 +35,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
     </tr>
   </thead>
   <tbody>
-    >
     <tr>
       <td>Furkan ÖZTÜRK</td>
       <td>Scrum Master</td>

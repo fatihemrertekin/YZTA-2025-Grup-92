@@ -416,13 +416,22 @@ Bu sprint, kullanıcıya dönük sistemin olgunlaşmasında önemli bir geçiş 
 - Hem karanlık hem aydınlık tema seçenekleriyle kullanıcı dostu, sade ve modern bir arayüz geliştirilmiştir.  
 - Tüm sayfa geçişleri, bileşenler ve tasarım detayları tamamlanarak test edilmiştir.
 
+  ![WhatsApp Image 2025-08-03 at 19 32 35](https://github.com/user-attachments/assets/86ac710f-25a3-40fd-a166-a0d8fc3aee81)
+
+
 ### Gelişmiş Filtreleme Sistemi
 - Kullanıcıların teknoloji haberlerini kategorilere göre filtreleyebilmesi sağlanmıştır.  
 - Filtreleme sistemi, performans ve kullanılabilirlik açısından optimize edilmiştir.
 
+![WhatsApp Image 2025-08-03 at 19 32 16](https://github.com/user-attachments/assets/bcd8d433-70f1-449e-b67b-608a3242fd4a)
+
+
 ### E-posta Gönderim Sorununun Giderilmesi
 - Günlük gönderimlerde yaşanan zamanlama ve teslimat sorunları çözülmüştür.  
 - Artık abonelere düzenli ve güncel özet içerikler sorunsuz şekilde iletilebilmektedir.
+
+![WhatsApp Image 2025-08-03 at 19 32 16 (2)](https://github.com/user-attachments/assets/57a86f28-64cc-4fc2-8359-77b17950a823)
+
 
 ### Abonelik Sistemi ve Yardım Merkezi
 - Abonelik sistemi sadeleştirilmiş, kullanıcıya açık bir şekilde “abonelikten çık” opsiyonu eklenmiştir.  

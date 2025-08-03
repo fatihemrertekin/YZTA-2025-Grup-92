@@ -13,20 +13,20 @@ Enes KIRAÇ (Pasif Üye)
 
 Emine ÇAKAR (Pasif Üye)
 
-# TechNews – Yapay Zekâ Destekli Teknoloji Bülteni ve Mikro-Öğrenme Platformu
+# TechNews – Yapay Zekâ Destekli Eğitici Teknoloji Bülteni Platformu
 
 > **Yapay Zekâ Teknoloji Akademisi 2025 | Grup 92 Bootcamp Projesi**  
 > **Takım Adı:** Yenilikçiler  
 > **Geliştirme Süresi:** 4–6 hafta  
-> **Teknolojiler:** React, FastAPI, Gemini AI, PostgreSQL, Redis, SendGrid
+> **Teknolojiler:** React, FastAPI, Gemini AI, PostgreSQL, Docker
 
 ---
 
 ## Proje Tanımı
 
-**TechNews**, bilgi karmaşasının yoğun yaşandığı teknoloji dünyasında çalışan yazılım geliştiriciler, teknik liderler ve ürün yöneticileri için özel olarak tasarlanmış, yapay zekâ destekli bir **akıllı bülten ve mikro-öğrenme** platformudur.
+**TechNews**, bilgi karmaşasının yoğun yaşandığı teknoloji dünyasında çalışan yazılım geliştiriciler, teknik liderler ve ürün yöneticileri için özel olarak tasarlanmış, yapay zekâ destekli bir **akıllı bülten ve teknolojide güncel kalma** platformudur.
 
-Proje; haberleri sadece aktaran değil, **analiz eden**, **öğreten** ve **kişiye özel sunan** bir sistem olarak konumlanır. AI modelleriyle içerikler puanlanır, özetlenir, eğilimlerine göre değerlendirilir ve kullanıcının ilgi alanlarına göre haftalık olarak sunulur. Ek olarak, bu içeriklerden yola çıkarak oluşturulan **5–15 dakikalık mikro-kurslar**, profesyonellerin yeni teknolojileri hızlıca öğrenmesini sağlar.
+Proje; haberleri sadece aktaran değil, **analiz eden**, **öğreten** ve **kişiye özel sunan** bir sistem olarak konumlanır. AI modelleriyle içerikler puanlanır, özetlenir, eğilimlerine göre değerlendirilir ve kullanıcının ilgi alanlarına göre günlük, haftalık olarak bülten maili kişiye gönderilir. Ek olarak, halihazırda geliştirilmekte olan projeler bu içeriklerden yola çıkarak, profesyonellerin yeni teknolojileri hızlıca öğrenip entegre edebilmesini sağlar.
 
 ---
 
@@ -90,22 +90,21 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 
 | Katman       | Teknoloji                    |
 |--------------|------------------------------|
-| Frontend     | React (Next.js)              |
+| Frontend     | React                        |
 | Backend      | Python (FastAPI)             |
 | Veritabanı   | PostgreSQL                   |
-| Ön Bellek    | Redis                        |
-| Görev Kuyruğu| Celery                       |
-| Yapay Zekâ   | Gemini AI, OpenAI, NLP       |
-| E-posta      | SendGrid                     |
-| Hosting      | AWS / GCP                    |
+| Görev Kuyruğu| Docker                       |
+| Yapay Zekâ   | Gemini AI, NLP               |
+| E-posta      | SMTP Protokolü               |
+| Hosting      | Render,Vercel                |
 
 ---
 
 ## Temel Sistem Bileşenleri
 
-- **Veri Toplama:** RSS, GitHub API, HackerNews, Reddit, TechCrunch scraping  
-- **AI Katmanı:** Özetleme, puanlama, eğilim analizi, kurs üretimi  
-- **Teslimat:** Haftalık e-posta, kullanıcı paneli, mikro-kurs sayfaları  
+- **Veri Toplama:** RSS, GitHub API, TechVerge, TechCrunch scraping  
+- **AI Katmanı:** Özetleme, puanlama, eğilim analizi, bülten yönetimi  
+- **Teslimat:** Haftalık e-posta, kullanıcı paneli, bülten ve arşiv sayfaları  
 - **Kullanıcı Arayüzü:** İlgi alanı seçimi, bildirim ayarları, kurs ilerlemesi takibi
 
 ---
@@ -145,16 +144,16 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 - [x] Kayıt ve tercih ekranı
 
 ### Phase 2 – Geliştirme (Sprint2)
-- [x] Mikro kurs üretimi
-- [x] TTS ile sesli anlatım
+- [x] İletişim ekranı
+- [x] Arşiv kaydı
 - [x] Arayüz tasarımı
 - [x] Bülten kişiselleştirme
 
 ### Phase 3 – Ölçekleme (Sprint3)
-- [ ] Mobil uygulama / PWA
+- [ ] Web uygulama
 - [ ] Geliştirici API’leri
-- [ ] Genişletilmiş dikeyler (FinTech, LegalTech vs.)
-- [ ] Topluluk sistemi
+- [ ] Abonelik sistemi
+- [ ] Mail gönderimi
 
 ---
 
@@ -207,7 +206,7 @@ Sprint 1’de odaklanılan görevler:
 
 **Renk Kodları (Miro):**  
 - Pembe: AI ve yazılım  
-- Mor: TTS / ses  
+- Mor: Arşiv oluşumu 
 - Açık Yeşil: Görsel içerik  
 - Koyu Yeşil: Genel teknik görevler  
 - Mavi: Arayüz ve kullanıcı deneyimi

@@ -322,9 +322,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
   Mevcut teknoloji haber bültenleri, hedeflenmiş profesyonel gelişim ve pratik uygulamadan ziyade eğlenceye/genel kapsama odaklanmaktadır. TechNews bu boşluğu doldurmayı hedeflemektedir.
 
 
-
-
-
 Takım adı: Yenilikçiler
 
 Takım üyeleri:

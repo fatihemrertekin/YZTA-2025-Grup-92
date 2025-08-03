@@ -64,85 +64,12 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 
 
+
 @**Uygulama URL'si:** [TechNews Canlı Uygulama URL'si ](https://yzta-2025-grup-92.vercel.app/#)
 
 
 
-### Kullanılan Teknolojiler
 
-<table>
-  <thead>
-    <tr>
-      <th>Katman</th>
-      <th>Teknoloji</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Frontend</td>
-      <td>React (Next.js)</td>
-    </tr>
-    <tr>
-      <td>Backend</td>
-      <td>Python (FastAPI)</td>
-    </tr>
-    <tr>
-      <td>Veritabanı</td>
-      <td>PostgreSQL</td>
-    </tr>
-    <tr>
-      <td>Ön Bellek</td>
-      <td>Redis</td>
-    </tr>
-    <tr>
-      <td>Görev Kuyruğu</td>
-      <td>Celery</td>
-    </tr>
-    <tr>
-      <td>Yapay Zekâ</td>
-      <td>Gemini AI, OpenAI, NLP</td>
-    </tr>
-    <tr>
-      <td>E-posta</td>
-      <td>SendGrid</td>
-    </tr>
-    <tr>
-      <td>Hosting</td>
-      <td>AWS / GCP</td>
-    </tr>
-  </tbody>
-</table>
-
-### Risk Analizi
-<table>
-  <thead>
-    <tr>
-      <th>Risk</th>
-      <th>Önlem</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>AI içeriği hatalı olabilir</td>
-      <td>Kaynak gösterimi, kullanıcı geri bildirimi</td>
-    </tr>
-    <tr>
-      <td>API bağımlılıkları</td>
-      <td>Çoklu kaynak, fallback sistemler</td>
-    </tr>
-    <tr>
-      <td>Performans sorunları</td>
-      <td>Ölçeklenebilir mimari, önbellekleme</td>
-    </tr>
-    <tr>
-      <td>Kullanıcı terk oranı</td>
-      <td>Kişiselleştirme, değer temelli içerik</td>
-    </tr>
-  </tbody>
-</table>
-
-
-  ### Türkçe Açıklama
   TechNews — **Teknolojiyle Öğrenmenin Yeni Yolu**
 
   Yazılım ve teknoloji sektöründe çalışan profesyoneller ve öğrenciler olarak hepimiz, sürekli değişen bir bilgi denizinin içindeyiz. Her gün yüzlerce yeni makale, haber, araç ve framework ortaya çıkarken, bunları takip etmek için ne yeterince zamanımız oluyor ne de hangi bilginin gerçekten değerli olduğunu kolayca ayırt edemiyoruz.

@@ -28,7 +28,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 <table>
   <thead>
     <tr>
-      <th></th>
       <th>Name  </th>
       <th>Title</th>
       <th>LinkedIn</th>
@@ -39,8 +38,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
   <tbody>
     >
     <tr>
-      <td><img ![Furkan_image](https://github.com/user-attachments/assets/3fc9793e-a708-4971-a4fc-687cc66acc83)
- /></td>
       <td>Furkan ÖZTÜRK</td>
       <td>Scrum Master</td>
       <td><a href="https://www.linkedin.com/in/furkan-ozturk06/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a></td>
@@ -48,7 +45,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
       <td><a href="[Furkan ÖZTÜRK Kişisel Web URL'si]" target="_blank"><img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a></td>
     </tr>
     <tr>
-      <td><img src="./assets/Furkan_image.jpeg" alt="Fatih Emre ERTEKİN" width="100" /></td>
       <td>Fatih Emre ERTEKİN</td>
       <td>Developer</td>
       <td><a href="https://www.linkedin.com/in/fatih-emre-ertekin-199283191/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a></td>
@@ -56,7 +52,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
       <td><a href="[Fatih Emre ERTEKİN Kişisel Web URL'si]" target="_blank"><img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a></td>
     </tr>
     <tr>
-      <td><img src="./assets/Kubra.jpg" alt="Kübra ÖZCAN"  width="100" /></td>
       <td>Kübra ÖZCAN</td>
       <td>Product Owner</td>
       <td><a href="https://www.linkedin.com/in/kubra-ozcan/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a></td>

@@ -293,7 +293,8 @@ Sprint 2 öncesinde tüm kullanıcı hikayeleri alt görevleriyle birlikte backl
 - Ekstra iletişim WhatsApp üzerinden  
 - Tüm kayıtlar Google Drive’a aktarıldı
 
-<img width="869" height="1228" alt="spr2" src="https://github.com/user-attachments/assets/e209e87e-8b70-4616-b781-f9001c0859ac" />
+<img width="654" height="982" alt="sonn" src="https://github.com/user-attachments/assets/1426d738-8faf-4a48-b6fa-859aabf49480" />
+
 
 ---
 

@@ -287,7 +287,7 @@ Sprint 1’de odaklanılan görevler:
 - Yapay zekâ modelinin ilk sürümünün eğitimi ve testleri  
 - RSS ve haber kaynaklarından veri çekimi için API entegrasyonu  
 - Bülten içerik şablonlarının ve bülten prototipinin hazırlanması  
-- TTS modülü araştırmaları  
+- Trello kullanımı araştırmılası  
 - E-posta şablonu taslakları
 
 **Renk Kodları (Miro):**  

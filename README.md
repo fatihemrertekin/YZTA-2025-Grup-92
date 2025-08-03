@@ -11,8 +11,9 @@
 
 ## YENİLİKÇİLER
 
+<p align="center">
  <img width="444" height="321" alt="takım_logo" src="https://github.com/user-attachments/assets/5e84a9a8-dc89-46d8-8682-053e1ab4d5a0" />
-
+</p>
 
 ## Takım Üyeleri
 
@@ -58,12 +59,10 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 ##  TechNews - AI-Powered Tech Newsletter & Learning Platform
 
-<p align="center">
   
 <img width="173" height="47" alt="Project_logo" src="https://github.com/user-attachments/assets/6f46ad7d-01aa-4f83-8cbc-9f6da89378ad" />
 
 
-</p>
 
 @**Uygulama URL'si:** [TechNews Canlı Uygulama URL'si ](https://yzta-2025-grup-92.vercel.app/#)
 

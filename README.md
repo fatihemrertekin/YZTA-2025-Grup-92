@@ -464,7 +464,7 @@ Hedeflenen tüm görevler başarıyla tamamlandı ve sprint planına %100 uyum s
 ## Sprint Retrospektifi ve Değerlendirme
 
 ### Ekip İçi İletişim ve Motivasyon
-- Herkes üzerine düşen sorumlulukları zamanında yerine getirirken, motivasyon yüksek tutuldu.  
+- Herkes üzerine düşen sorumlulukları zamanında yerine getirirken (pasif üyeler hariç) , motivasyon yüksek tutuldu.  
 - Tüm ekip, Google Meet platformu üzerinden bir araya gelerek süreci değerlendirdi, başarılarını kutladı ve birlikte tanıtım videosunu izledi.
 
 ### Sprint sonunda alınan kararlar:

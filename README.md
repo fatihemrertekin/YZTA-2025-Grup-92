@@ -284,11 +284,15 @@ Puanlama, görev zorlukları ve süre tahminlerine göre tüm ekip üyelerinin k
 
 #### 1.3 Görev Dağılımı  
 Sprint 1’de odaklanılan görevler:
+- Takım üyelerinin tanışması
 - Yapay zekâ modelinin ilk sürümünün eğitimi ve testleri  
 - RSS ve haber kaynaklarından veri çekimi için API entegrasyonu  
 - Bülten içerik şablonlarının ve bülten prototipinin hazırlanması  
-- Trello kullanımı araştırmılası  
-- E-posta şablonu taslakları
+- Trello kullanımı araştırılması  
+
+<img width="691" height="867" alt="image" src="https://github.com/user-attachments/assets/032af209-1c13-4b1d-8483-72b0c0916fbb" />
+
+
 
 **Renk Kodları (Miro):**  
 - Pembe: AI ve yazılım  
@@ -305,11 +309,14 @@ Sprint 1’de odaklanılan görevler:
 - Her gün: Dün ne yaptım, bugün ne yapacağım, engel var mı?  
 - Kısa iletişimler WhatsApp ile, belgeler Google Drive’da tutuldu
 
+<img width="474" height="561" alt="image" src="https://github.com/user-attachments/assets/822d9b87-5953-4072-8df7-5e38494c6c6b" />
+
+
 ---
 
 ### 3. Ürün Durumu ve Prototip
 
-Sprint sonunda çalışan bir AI modülü üretildi. Önemli çıktılar:
+Sprint sonunda bir AI modülü üretildi. Önemli çıktılar:
 - Gündem analiz eden sınıflandırıcı algoritma  
 - Eğitim modülleri üretmek için veri kümeleri  
 - İlk bülten prototipi  
@@ -334,6 +341,9 @@ Sprint sonunda çalışan bir AI modülü üretildi. Önemli çıktılar:
   - **Grup 2 (Kübra):** Test, iyileştirme, kullanıcı hazırlığı  
 - Sabit toplantı takvimi oluşturuldu  
 - Gelecekte kullanılacak veri kaynakları ve içerikler için ihtiyaç listesi çıkarıldı
+- Trelloda görev dağılımı oluşturuldu
+
+<img width="1371" height="507" alt="image" src="https://github.com/user-attachments/assets/32567dfc-1c78-4d92-b9ac-4b3a059a9000" />
 
 ---
 

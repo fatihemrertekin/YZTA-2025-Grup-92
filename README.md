@@ -9,9 +9,9 @@ Fatih Emre ERTEKİN (Developer)
 
 Kübra ÖZCAN (Developer)
 
-Enes KIRAÇ (Pasif Üye)
+~~Enes KIRAÇ~~ (Pasif Üye)
 
-Emine ÇAKAR (Pasif Üye)
+~~Emine ÇAKAR~~ (Pasif Üye)
 
 # TechNews – Yapay Zekâ Destekli Eğitici Teknoloji Bülteni Platformu
 
@@ -48,11 +48,9 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 |----------------------------|----------|
 | AI destekli araştırma   | Trend analizleri, sosyal sinyal kontrolü, içerik puanlama |
 | Akıllı bülten            | Haftalık olarak ilgi alanına göre kürate edilmiş içerik |
-| Mikro-öğrenme modülleri | 5–15 dakikalık, kod içeren, pratik odaklı mini kurslar |
-| Sesli içerik desteği    | Gemini AI ile doğal sesli anlatım (TTS) |
 | Kişiselleştirme         | İlgi alanı, teslimat sıklığı, içerik derinliği tercihleri |
 | İçerik öneri motoru     | Okuma alışkanlığına göre yeni kurs/bülten önerisi |
-| Mobil uyumlu arayüz     | React tabanlı responsive tasarım, PWA uyumluluğu |
+| Web uyumlu arayüz     | React tabanlı responsive tasarım, PWA uyumluluğu |
 
 ---
 
@@ -79,7 +77,7 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 
 ### Başarı Kriterleri (KPIs)
 - Bülten açılma oranı > %40  
-- Kurs tamamlama oranı > %30  
+- Maillere dönüş oranı > %30  
 - 4 hafta aktif kullanıcı oranı > %60  
 - Ücretsiz → Premium dönüşüm oranı > %15  
 - Kullanıcı memnuniyeti > 4.5 / 5
@@ -105,7 +103,7 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 - **Veri Toplama:** RSS, GitHub API, TechVerge, TechCrunch scraping  
 - **AI Katmanı:** Özetleme, puanlama, eğilim analizi, bülten yönetimi  
 - **Teslimat:** Haftalık e-posta, kullanıcı paneli, bülten ve arşiv sayfaları  
-- **Kullanıcı Arayüzü:** İlgi alanı seçimi, bildirim ayarları, kurs ilerlemesi takibi
+- **Kullanıcı Arayüzü:** İlgi alanı seçimi, bildirim ayarları, bülten ilerlemesi takibi
 
 ---
 
@@ -124,14 +122,12 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 ### Ücretsiz Paket:
 - Haftalık bülten
 - 3 ilgi alanı
-- Temel kurslara erişim
+- Temel bültene erişim
 
 ### Premium ($9.99 / ay):
 - Günlük bülten  
-- Sınırsız konu ve içerik  
-- Gelişmiş mikro kurslar  
+- Sınırsız konu ve içerik   
 - Arşiv ve kişisel öneri motoru  
-- Sesli içerik önceliği, destek
 
 ---
 
@@ -227,7 +223,7 @@ Sprint sonunda çalışan bir AI modülü üretildi. Önemli çıktılar:
 - Gündem analiz eden sınıflandırıcı algoritma  
 - Eğitim modülleri üretmek için veri kümeleri  
 - İlk bülten prototipi  
-- Mikro kurs sunum formatının arayüz entegrasyonu
+- Arşiv sunum formatının arayüz entegrasyonu
 
 ---
 
@@ -235,7 +231,7 @@ Sprint sonunda çalışan bir AI modülü üretildi. Önemli çıktılar:
 
 - Sistem işlevsel ve içerik üretim kabiliyeti yeterli bulundu  
 - Geri bildirimler:
-  - Mikro kurslar daha çeşitli ve zengin olabilir  
+  - Mikro kurslar platforma eklenebilir  
   - Bültenler sadeleştirilebilir  
   - Video ve ses formatları sonraki sürümlerde entegre edilebilir
 
@@ -261,7 +257,7 @@ Sprint sonunda çalışan bir AI modülü üretildi. Önemli çıktılar:
 Sprint 2 öncesinde tüm kullanıcı hikayeleri alt görevleriyle birlikte backlog’a aktarıldı. Odak noktaları:
 - İçerik zenginliği  
 - Analiz algoritması iyileştirmesi  
-- TTS ile sesli anlatım
+- Mail gönderimi
 
 #### 1.2 Sprint Kapasitesi  
 - Toplam puan: 100  
@@ -272,14 +268,13 @@ Sprint 2 öncesinde tüm kullanıcı hikayeleri alt görevleriyle birlikte backl
 #### 1.3 Görev Kategorileri  
 - “Impact Score” hesaplama sistemi geliştirildi  
 - Çok kaynaklı haber çekim modülü yazıldı  
-- TTS daha doğal hale getirildi  
 - Segment bazlı bülten şablonları hazırlandı  
-- Mobil arayüz için ilk görsel taslaklar geliştirildi  
+- Web arayüz için ilk görsel taslaklar geliştirildi  
 - Görsel öğrenme kartı şablonları oluşturuldu
 
 **Renk Kodları (Miro):**  
 - Pembe: Yazılım geliştirme  
-- Mor: Ses üretimi  
+- Mor: Bülten üretimi  
 - Açık Yeşil: Görsel içerikler  
 - Koyu Yeşil: Teknik görevler  
 - Mavi: Arayüz & UX
@@ -299,10 +294,8 @@ Sprint 2 öncesinde tüm kullanıcı hikayeleri alt görevleriyle birlikte backl
 
 ### 3. Ürün Durumu
 
-- AI artık “kamu ilgisi” gibi metrikleri dikkate alarak içerik üretiyor  
-- Mikro kurslar konuya göre sınıflandırılıyor  
+- AI artık “kamu ilgisi” gibi metrikleri dikkate alarak içerik üretiyor    
 - Kişiye özel bülten öneri motoru entegre edildi  
-- TTS modülü daha insan benzeri konuşma üretmeye başladı  
 - Görsel bilgi kartları geliştirildi
 
 ![WhatsApp Image 2025-07-21 at 17 22 16](https://github.com/user-attachments/assets/3afe59f9-a613-4d62-9d23-652e6fe7a329)
@@ -324,12 +317,12 @@ Sprint 2 öncesinde tüm kullanıcı hikayeleri alt görevleriyle birlikte backl
 
 - İki grup yapısı korundu:
   - **Grup 1 (Furkan, Fatih):** Yeni içerik modülleri ve framework  
-  - **Grup 2 (Kübra):** Test, ses senkronizasyonu, UI  
+  - **Grup 2 (Kübra):** Test, senkronizasyon, UI  
 - Grup 2 daha sık toplantı yapacak şekilde yeniden yapılandırıldı  
 - Sprint 3 için ön hazırlıklar başlatıldı:
   - Gelişmiş içerik filtreleme  
   - Olay tabanlı öneri sistemi  
-  - Mobil uyumluluk testleri
+  - Web uyumluluk testleri
 
 ![ai_newsletter_yzta](https://github.com/user-attachments/assets/602d515b-309a-4a03-9a22-863b8aa9ba7d)
 

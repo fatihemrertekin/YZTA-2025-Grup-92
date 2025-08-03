@@ -55,6 +55,12 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
   </tbody>
 </table>
 
+~~Enes KIRAÇ~~ (Pasif Üye)
+
+~~Emine ÇAKAR~~ (Pasif Üye)
+
+(Pasif üyeler mazeretleri nedeniyle hiçbir katkıda bulunmadıkları için pasif üye olmayı kabul etmişlerdir.)
+
 ---
 
 ##  TechNews - Yapay Zeka Destekli Eğitici Teknoloji Bülteni Platformu
@@ -68,23 +74,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 @**Uygulama URL'si:** [TechNews Canlı Uygulama URL'si ](https://yzta-2025-grup-92.vercel.app/#)
 
-
-
-
-Takım adı: Yenilikçiler
-
-Takım üyeleri:
-Furkan ÖZTÜRK (Scrum Master)
-
-Fatih Emre ERTEKİN (Developer)
-
-Kübra ÖZCAN (Product Owner)
-
-~~Enes KIRAÇ~~ (Pasif Üye)
-
-~~Emine ÇAKAR~~ (Pasif Üye)
-
-(Pasif üyeler mazeretleri nedeniyle hiçbir katkıda bulunmadıkları için pasif üye olmayı kabul etmişlerdir.)
 
 
 # TechNews – Yapay Zeka Destekli Eğitici Teknoloji Bülteni Platformu

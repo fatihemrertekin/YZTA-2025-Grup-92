@@ -558,3 +558,7 @@ Bu sprint ile birlikte TechNews, fikir aşamasından çıkarak işlevsel, kullan
 Temel hedefimiz olan öğrenmeyi kolaylaştırmak, son gelişmeleri hızlı takip etmek ve içerik karmaşasını sadeleştirerek kullanıcıya rehberlik etmek başarılı şekilde uygulamaya yansıtılmıştır.  
 Kapsamlı yardım seçenekleri, kullanıcı arayüzündeki sadeleşme ve güçlü arka plan mimarisi, TechNews’in ileriye dönük gelişimi ve sürdürülebilirliği için sağlam bir temel oluşturmuştur.
 
+Bizi LinkedIn üzerinden takip edin
+Follow us on LinkedIn:
+https://www.linkedin.com/company/technews-app/
+

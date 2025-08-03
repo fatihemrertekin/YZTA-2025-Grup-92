@@ -230,7 +230,8 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 ## Kurulum ve Geliştirme
 
 #bash
-git clone https://github.com/YZTA-2025-Grup-92.git
+
+git clone https://github.com/fatihemrertekin/YZTA-2025-Grup-92/
 
 cd technews
 

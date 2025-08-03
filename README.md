@@ -1,11 +1,5 @@
 # Yapay Zeka Teknoloji Akademisi 2025 Grup 92 Bootcamp
 
-<p align="center">
-  
-<img width="173" height="47" alt="Project_logo" src="https://github.com/user-attachments/assets/6f46ad7d-01aa-4f83-8cbc-9f6da89378ad" />
-
-
-</p>
 
 ---
 
@@ -66,7 +60,9 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 <p align="center">
   
-  <img src="./assets/Project_logo.png"  style="width: 80%; max-width: 600px; height: auto;">
+<img width="173" height="47" alt="Project_logo" src="https://github.com/user-attachments/assets/6f46ad7d-01aa-4f83-8cbc-9f6da89378ad" />
+
+
 </p>
 
 @**Uygulama URL'si:** [TechNews Canlı Uygulama URL'si ](https://yzta-2025-grup-92.vercel.app/#)

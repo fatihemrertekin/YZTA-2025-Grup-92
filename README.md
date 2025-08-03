@@ -17,7 +17,8 @@
 
 ## YENİLİKÇİLER
 
-  <img src="./assets/takım_logo.png" alt="DATANAUTS Takım Logosu" width="width: 80%; max-width: 600px; height: auto;">
+ <img width="444" height="321" alt="takım_logo" src="https://github.com/user-attachments/assets/5e84a9a8-dc89-46d8-8682-053e1ab4d5a0" />
+
 ---
 
 ## Takım Üyeleri

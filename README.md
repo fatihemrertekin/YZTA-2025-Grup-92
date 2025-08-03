@@ -25,29 +25,6 @@
 
 Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgilerini bulabilirsiniz.
 
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-  }
-
-  th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-  }
-
-  th {
-    background-color: #2c3e50; 
-    color: white; 
-  }
-
-  img {
-    border-radius: 10px;
-    width: 100px;
-    height: 100px;
-  }
-</style>
 
 <table>
   <thead>

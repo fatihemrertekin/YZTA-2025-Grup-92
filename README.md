@@ -162,10 +162,6 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 </table>
 
 
-<details>
-
-  <summary><b>TechNews App  (Description)</b></summary>
-
   ### Türkçe Açıklama
   TechNews — **Teknolojiyle Öğrenmenin Yeni Yolu**
 

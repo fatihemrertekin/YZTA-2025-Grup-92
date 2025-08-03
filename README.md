@@ -86,6 +86,9 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 Proje; haberleri sadece aktaran değil, **analiz eden**, **öğreten** ve **kişiye özel sunan** bir sistem olarak konumlanır. AI modelleriyle içerikler puanlanır, özetlenir, eğilimlerine göre değerlendirilir ve kullanıcının ilgi alanlarına göre günlük ve haftalık olarak bülten maili kişiye gönderilir. Ek olarak, halihazırda geliştirilmekte olan projeler bu içeriklerden yola çıkarak, profesyonellerin yeni teknolojileri hızlıca öğrenip entegre edebilmesini sağlar.
 
+<img width="34" height="30" alt="app_logo" src="https://github.com/user-attachments/assets/4d75ae3d-24b1-44dc-b4a5-26116b127a5e" />
+
+
 ---
 
 ## Vizyon & Misyon

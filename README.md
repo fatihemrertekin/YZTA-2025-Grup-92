@@ -162,6 +162,10 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 | E-posta      | SMTP Protokolü               |
 | Hosting      | Render,Vercel                |
 
+
+![WhatsApp Image 2025-08-03 at 19 32 17 (1)](https://github.com/user-attachments/assets/7b8ba2c3-1c89-4b63-b8b9-d8f96d575066)
+
+
 ---
 
 ## Temel Sistem Bileşenleri
@@ -418,6 +422,8 @@ Bu sprint, kullanıcıya dönük sistemin olgunlaşmasında önemli bir geçiş 
 
   ![WhatsApp Image 2025-08-03 at 19 32 35](https://github.com/user-attachments/assets/86ac710f-25a3-40fd-a166-a0d8fc3aee81)
 
+  ![WhatsApp Image 2025-08-03 at 19 32 15 (1)](https://github.com/user-attachments/assets/f929cd56-3c1e-40d2-8a2b-d7f28b2b45a3)
+
 
 ### Gelişmiş Filtreleme Sistemi
 - Kullanıcıların teknoloji haberlerini kategorilere göre filtreleyebilmesi sağlanmıştır.  
@@ -441,12 +447,27 @@ Bu sprint, kullanıcıya dönük sistemin olgunlaşmasında önemli bir geçiş 
   - Telefon: +90 (212) 555-0123  
 - Ayrıca, kullanıcıları bilgilendirmek için SSS (Sıkça Sorulan Sorular) bölümü hazırlanmıştır.
 
+![WhatsApp Image 2025-08-03 at 19 32 19 (1)](https://github.com/user-attachments/assets/4a1c20ad-eaa6-4db3-8d84-b9ba13dbb59f)
+
+
+![WhatsApp Image 2025-08-03 at 19 32 19 (2)](https://github.com/user-attachments/assets/c688b413-0473-4e25-9eca-92e24ee1b78e)
+
+
+![WhatsApp Image 2025-08-03 at 19 32 19](https://github.com/user-attachments/assets/eb7a21f1-6075-4565-b9c2-a063ab11b3eb)
+
+
+![WhatsApp Image 2025-08-03 at 19 32 18 (1)](https://github.com/user-attachments/assets/fac4b0f5-04e4-4746-a381-7253a5a87c70)
+
+
 ### Admin Paneli ve Backend Geliştirmeleri
 - İçerik ve kullanıcı yönetimi için kapsamlı bir admin paneli oluşturulmuştur.  
 - Backend tarafında gerekli veri yapıları ve güvenlik önlemleri uygulanmıştır.
 
+![WhatsApp Image 2025-08-03 at 19 32 16 (1)](https://github.com/user-attachments/assets/92b674e8-e9ee-4c15-b7d3-34826b51d5ac)
+
+
 ### Tanıtım ve Yayılım Faaliyetleri
-- TechNews’in daha fazla kullanıcıya ulaşması ve sosyal mecralarda görünürlüğü için LinkedIn hesabı açılmıştır.  
+- TechNews’in daha fazla kullanıcıya ulaşması ve sosyal mecralarda görünürlüğü için sosyal medya hesabı açılmıştır.  
 - İlk tanıtım içerikleri yayınlanarak erken kullanıcı kazanımı hedeflenmiştir.
 
 ---

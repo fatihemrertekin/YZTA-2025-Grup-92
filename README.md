@@ -57,10 +57,11 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
 
 ---
 
-##  TechNews - AI-Powered Tech Newsletter & Learning Platform
+##  TechNews - Yapay Zeka Destekli Eğitici Teknoloji Bülteni Platformu
 
   
 <img width="173" height="47" alt="Project_logo" src="https://github.com/user-attachments/assets/6f46ad7d-01aa-4f83-8cbc-9f6da89378ad" />
+
 
 
 

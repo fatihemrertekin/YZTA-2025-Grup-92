@@ -39,7 +39,8 @@ Aşağıda YENİLİKÇİLER takımının değerli üyelerini ve iletişim bilgil
   <tbody>
     >
     <tr>
-      <td><img src="./assets/fatih_image.jpeg" alt="Furkan ÖZTÜRK" width="100" /></td>
+      <td><img ![Furkan_image](https://github.com/user-attachments/assets/3fc9793e-a708-4971-a4fc-687cc66acc83)
+ /></td>
       <td>Furkan ÖZTÜRK</td>
       <td>Scrum Master</td>
       <td><a href="https://www.linkedin.com/in/furkan-ozturk06/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a></td>

@@ -112,12 +112,17 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 
 ## Kullanıcı Profilleri
 
-### Persona 1 – “Yoğun Geliştirici”
+### Persona 1 - "Teknoloji Meraklısı"
+- 2 yıldan daha az bir tecrübe
+- Teknolojiye oldukça ilgili ve yakından takip etmek istiyor
+- Yeniliğe meraklı ve kendini geliştirmek daima güncel kalmalı
+
+### Persona 2 – “Yoğun Geliştirici”
 - 3–7 yıl deneyimli, startup’ta çalışıyor
 - Trendleri takip etmek istiyor ama vakti kısıtlı
 - Pratik, özet ve doğrudan uygulanabilir içerik arıyor
 
-### Persona 2 – “Teknoloji Lideri”
+### Persona 3 – “Teknoloji Lideri”
 - 7+ yıl deneyimli, teknik karar verici
 - Stratejik içgörüler peşinde
 - Teknoloji seçimlerini iş etkisine göre değerlendirmek istiyor

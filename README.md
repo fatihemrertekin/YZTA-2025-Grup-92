@@ -230,10 +230,14 @@ Yapay zekâ destekli araştırma ve içerik üretim altyapısıyla, kullanıcıl
 ## Kurulum ve Geliştirme
 
 #bash
-git clone https://github.com/YZTA-2025-Grup-92/technews.git
+git clone https://github.com/YZTA-2025-Grup-92.git
+
 cd technews
+
 pip install -r requirements.txt
+
 npm install
+
 npm run dev
 
 ___________________________
